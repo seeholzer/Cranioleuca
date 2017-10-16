@@ -1,0 +1,173 @@
+ID	Sample.Code	Institution	Catalog.Number	Population.Code	Population	Transect.Position	Day	Month	Year	Country	Department	Locality.Name	Latitude	Longitude	Verbatim.Elevation	Bioclim.Elevation	Age	Sex	Mass	Wing.length	PC1.plumage
+B67126.Tumbes.Amotape	CA1_Amotape	LSUMZ	B-67126	1	Amotape	0	14	July	2009	Peru	Tumbes	Parque nacional cerros de Amotape, cerro Los Limos	-4.14695	-80.63084	1117	1123	a	f	12.2	NA	NA
+B67127.Tumbes.Amotape	CA2a_Amotape	LSUMZ	B-67127	1	Amotape	0	14	July	2009	Peru	Tumbes	Parque nacional cerros de Amotape, cerro Los Limos	-4.14695	-80.63084	1117	1123	a	m	12.6	59.09	-0.399059746803839
+B67136.Tumbes.Amotape	CA3_Amotape	LSUMZ	B-67136	1	Amotape	0	15	July	2009	Peru	Tumbes	Parque nacional cerros de Amotape, El Encanto	-4.1433	-80.58614	1138	1132	a	m	11.6	NA	NA
+B67166.Tumbes.Amotape	CA4_Amotape	LSUMZ	B-67166	1	Amotape	0	15	July	2009	Peru	Tumbes	Parque nacional cerros de Amotape, El Encanto	-4.1433	-80.58614	1138	1132	a	m	11.5	NA	NA
+B67177.Tumbes.Amotape	CA5_Amotape	LSUMZ	B-67177	1	Amotape	0	16	July	2009	Peru	Tumbes	El Plantano	-4.12949	-80.61974	952	974	a	m	12.2	58.58	-4.12192856116387
+B67179.Tumbes.Amotape	CA6_Amotape	LSUMZ	B-67179	1	Amotape	0	16	July	2009	Peru	Tumbes	El Plantano	-4.12949	-80.61974	952	974	a	f	14.2	57.95	-1.28154625746397
+B67201.Tumbes.Amotape	CA7_Amotape	LSUMZ	B-67201	1	Amotape	0	16	July	2009	Peru	Tumbes	Parque nacional cerros de Amotape, cerro Los Limos	-4.14695	-80.630835	1117	1123	a	f	13.7	NA	NA
+B67243.Tumbes.Amotape	CA8_Amotape	LSUMZ	B-67243	1	Amotape	0	19	July	2009	Peru	Tumbes	Parque nacional, Cerros de Amotape, Quebrada El Barco	-4.1647	-80.630516	1185	1181	a	m	11.5	60.12	-0.174925282298128
+B67257.Tumbes.Amotape	CA9a_Amotape	LSUMZ	B-67257	1	Amotape	0	20	July	2009	Peru	Tumbes	Parque nacional, Cerros de Amotape, Quebrada El Barco	-4.14722	-80.629859	1119	1123	a	m	13	NA	NA
+B67273.Tumbes.Amotape	CA10_Amotape	LSUMZ	B-67273	1	Amotape	0	20	July	2009	Peru	Tumbes	Parque nacional, Cerros de Amotape,Quebraba El Barco	-4.1647	-80.630516	1185	1181	a	f	12.2	57.58	-0.752996796842959
+B72873.Piura.Canchaque	CA131_Canchaque	LSUMZ	B-72873	2	Canchaque	186.37	1	August	2010	Peru	Piura	3.3 km E Canchaque	-5.3788	-79.57652	2140	2160	a	f	16.3	61.6	-4.21837742489908
+B72874.Piura.Canchaque	CA132_Canchaque	LSUMZ	B-72874	2	Canchaque	186.37	1	August	2010	Peru	Piura	3.7 km E Canchaque	-5.381	-79.573	2190	2289	a	f	16.8	68.03	-2.2438456926086
+B72875.Piura.Canchaque	CA133_Canchaque	LSUMZ	B-72875	2	Canchaque	186.37	1	August	2010	Peru	Piura	4.7 km E Canchaque	-5.37652	-79.56374	2440	2337	a	m	16.7	66.8	-2.7454541023983
+B72877.Piura.Canchaque	CA135_Canchaque	LSUMZ	B-72877	2	Canchaque	186.37	1	August	2010	Peru	Piura	4.5 km E Canchaque	-5.36944	-79.56587	2710	2865	a	m	19	64.77	-1.26373715343049
+B72878.Piura.Canchaque	CA136_Canchaque	LSUMZ	B-72878	2	Canchaque	186.37	1	August	2010	Peru	Piura	4.2 km E Canchaque	-5.3715	-79.56834	2477	2449	a	m	15.4	64.64	-1.69718808223677
+B31683.Piura.Porculla	CA187_Porculla	LSUMZ	B-31683	3	Porculla	220.94	16	June	1998	Peru	Cajamarca	W of El Espino	-5.68	-79.31	2400	2174	a	f	17	67.5	NA
+B31685.Piura.Porculla	CA188_Porculla	LSUMZ	B-31685	3	Porculla	220.94	15	June	1998	Peru	Cajamarca	W of El Espino	-5.68	-79.31	2400	2174	j	f	17.4	NA	NA
+B72862.Piura.Porculla	CA120_Porculla	LSUMZ	B-72862	3	Porculla	220.94	29	July	2010	Peru	Piura	1.74 km SE Landirca	-5.83878	-79.52978	1735	1845	a	f	17.8	NA	-3.62852837259373
+B72863.Piura.Porculla	CA121_Porculla	LSUMZ	B-72863	3	Porculla	220.94	30	July	2010	Peru	Piura	2.76 km S Landirca	-5.84919	-79.53188	1955	1999	a	m	17.1	NA	-4.51915436489891
+B72864.Piura.Porculla	CA122_Porculla	LSUMZ	B-72864	3	Porculla	220.94	30	July	2010	Peru	Piura	3 km S Landirca	-5.85083	-79.53123	2040	2060	a	m	16	64.67	-5.08838186354973
+B72865.Piura.Porculla	CA123_Porculla	LSUMZ	B-72865	3	Porculla	220.94	30	July	2010	Peru	Piura	3.22 km S Landirca	-5.85296	-79.53005	2010	2060	a	m	17.1	63.36	-5.35755958958179
+B72866.Piura.Porculla	CA124_Porculla	LSUMZ	B-72866	3	Porculla	220.94	30	July	2010	Peru	Piura	2.98 km SE Landirca	-5.84243	-79.51779	2000	2076	a	m	16.6	66.79	-3.90974707738014
+B72868.Piura.Porculla	CA126_Porculla	LSUMZ	B-72868	3	Porculla	220.94	30	July	2010	Peru	Piura	2.45 km W Landirca	-5.82278	-79.516419	2460	2352	a	f	16.7	NA	NA
+B72869.Piura.Porculla	CA127a_Porculla	LSUMZ	B-72869	3	Porculla	220.94	30	July	2010	Peru	Piura	2.67 km E Landirca	-5.81692	-79.51579	2425	2352	a	f	17	63.63	-7.00984806929326
+B72870.Piura.Porculla	CA128_Porculla	LSUMZ	B-72870	3	Porculla	220.94	30	July	2010	Peru	Piura	2.3 km NE Landirca	-5.80981	-79.52463	2325	2439	a	m	16.3	65.58	-5.57422421678768
+B72871.Piura.Porculla	CA129_Porculla	LSUMZ	B-72871	3	Porculla	220.94	30	July	2010	Peru	Piura	2.34 km NE Landirca	-5.80759	-79.52694	2305	2303	a	f	17.3	NA	-5.00060060413862
+B72872.Piura.Porculla	CA130_Porculla	LSUMZ	B-72872	3	Porculla	220.94	30	July	2010	Peru	Piura	2.34 km NE Landirca	-5.80759	-79.52694	2305	2303	a	m	17.2	66.05	-1.90838436547247
+NK_169285	CA1nm_Porculla	MSB	169285	3	Porculla	220.94	22	December	2009	Peru	Piura	Abra Porculla	-5.839914	-79.505496	2168	2156	a	m	16.91	NA	NA
+B72879.Cajamarca.Llama	CA137b_Llama	LSUMZ	B-72879	4	Llama	305.38	3	August	2010	Peru	Cajamarca	2.24 km SW Llama	-6.52761	-79.13376	2235	2109	a	f	18.2	NA	-2.94029488620495
+B72880.Cajamarca.Llama	CA138_Llama	LSUMZ	B-72880	4	Llama	305.38	3	August	2010	Peru	Cajamarca	2.24 km SW Llama	-6.52761	-79.13376	2235	2109	j	m	17	NA	NA
+B72881.Cajamarca.Llama	CA139_Llama	LSUMZ	B-72881	4	Llama	305.38	3	August	2010	Peru	Cajamarca	2.24 km SW Llama	-6.52761	-79.13376	2235	2109	a	m	18	71.18	-3.48086465037264
+B72882.Cajamarca.Llama	CA140_Llama	LSUMZ	B-72882	4	Llama	305.38	3	August	2010	Peru	Cajamarca	3.22 km SW Llama	-6.53903	-79.13206	2330	2354	a	m	17.1	67.93	-0.226373846233073
+B72883.Cajamarca.Llama	CA141_Llama	LSUMZ	B-72883	4	Llama	305.38	3	August	2010	Peru	Cajamarca	7.3 km E Llama	-6.50314	-79.0552	2783	2759	a	f	20.1	68.96	-2.91858661169494
+B72884.Cajamarca.Llama	CA142_Llama	LSUMZ	B-72884	4	Llama	305.38	3	August	2010	Peru	Cajamarca	6.87 km E Llama	-6.50273	-79.05919	2755	2751	a	f	20.3	68.65	-2.02572194826723
+B72885.Cajamarca.Llama	CA143_Llama	LSUMZ	B-72885	4	Llama	305.38	3	August	2010	Peru	Cajamarca	6.57 km E Llama	-6.50385	-79.0618	2738	2751	a	m	20	68.11	-1.82357854455068
+B72887.Cajamarca.Llama	CA145a_Llama	LSUMZ	B-72887	4	Llama	305.38	3	August	2010	Peru	Cajamarca	3.16 km SW Llama	-6.53832	-79.13235	2320	2354	a	m	19.9	71.15	-2.41637028206555
+B72837.Cajamarca.Contumaza	CA95_Contumaza	LSUMZ	B-72837	5	Contumaza	393	22	July	2010	Peru	Cajamarca	5.3 km SSE Contumaza	-7.40743	-78.78323	2500	2531	a	m	25.7	NA	1.99600607603319
+B72838.Cajamarca.Contumaza	CA96_Contumaza	LSUMZ	B-72838	5	Contumaza	393	22	July	2010	Peru	Cajamarca	5 km SSE Contumaza	-7.40554	-78.78716	2616	2605	j	f	26.2	NA	NA
+B72839.Cajamarca.Contumaza	CA97_Contumaza	LSUMZ	B-72839	5	Contumaza	393	22	July	2010	Peru	Cajamarca	4.9 km SSE Contumaza	-7.40664	-78.79015	2637	2605	a	f	25.4	72.87	NA
+B72840.Cajamarca.Contumaza	CA98_Contumaza	LSUMZ	B-72840	5	Contumaza	393	22	July	2010	Peru	Cajamarca	5 km SSE Contumaza	-7.40554	-78.78716	2616	2605	a	f	23.5	74.64	-1.2448801595372
+B72841.Cajamarca.Contumaza	CA99a_Contumaza	LSUMZ	B-72841	5	Contumaza	393	22	July	2010	Peru	Cajamarca	4.6 km SSE Contumaza	-7.40422	-78.79109	2647	2605	a	m	27	NA	1.0084356924728
+NK_171957	CA7nm_Contumaza	MSB	171957	5	Contumaza	393	12	July	2010	Peru	Cajamarca	5.4 km SE Contumaza	-7.396624	-78.780607	2625	2642	j	m	25.37	NA	NA
+NK_172033	CA8nm_Contumaza	MSB	172033	5	Contumaza	393	16	July	2010	Peru	Cajamarca	5.4 km SE Contumaza	-7.396624	-78.780607	2550	2642	a	f	22.77	NA	NA
+NK_172063	CA9nm_Contumaza	MSB	172063	5	Contumaza	393	18	July	2010	Peru	Cajamarca	5.4 km SE Contumaza	-7.396624	-78.780607	2500	2642	a	m	NA	NA	NA
+B72842.Cajamarca.Celendin	CA100_Celendin	LSUMZ	B-72842	6	Celendin	432.11	25	July	2010	Peru	Cajamarca	4.15 km SE Celendin	-6.89156	-78.1189	3017	2972	a	f	24.3	74.8	-1.73763248438026
+B72843.Cajamarca.Celendin	CA101_Celendin	LSUMZ	B-72843	6	Celendin	432.11	25	July	2010	Peru	Cajamarca	4.15 km SE Celendin	-6.89151	-78.11893	3020	2972	a	m	24.4	74.81	-3.72572448961477
+B72844.Cajamarca.Celendin	CA102_Celendin	LSUMZ	B-72844	6	Celendin	432.11	25	July	2010	Peru	Cajamarca	4.38 km SE Celendin	-6.89291	-78.11806	3027	3009	a	f	22.9	70.2	-2.74618965366151
+B72845.Cajamarca.Celendin	CA103_Celendin	LSUMZ	B-72845	6	Celendin	432.11	25	July	2010	Peru	Cajamarca	4.38 km SE Celendin	-6.89291	-78.11806	3027	3009	j	f	20.6	NA	-2.91617610421225
+B72846.Cajamarca.Celendin	CA104a_Celendin	LSUMZ	B-72846	6	Celendin	432.11	25	July	2010	Peru	Cajamarca	4.33 km SE Celendin	-6.89097	-78.1166	3050	3171	a	f	23.7	72.35	0.172864034927645
+B72847.Cajamarca.Celendin	CA105_Celendin	LSUMZ	B-72847	6	Celendin	432.11	25	July	2010	Peru	Cajamarca	4.33 km SE Celendin	-6.89097	-78.1166	3050	3171	a	m	23.9	76.98	-3.58936516116084
+B72848.Cajamarca.Celendin	CA106a_Celendin	LSUMZ	B-72848	6	Celendin	432.11	25	July	2010	Peru	Cajamarca	4.33 km SE Celendin	-6.89097	-78.1166	3050	3171	a	f	23.6	71.73	-2.04949382827641
+B72849.Cajamarca.Celendin	CA107_Celendin	LSUMZ	B-72849	6	Celendin	432.11	25	July	2010	Peru	Cajamarca	3.7 km E Celendin	-6.8426	-78.11246	2895	2834	j	m	25.4	NA	-2.97286407497434
+B72850.Cajamarca.Celendin	CA108_Celendin	LSUMZ	B-72850	6	Celendin	432.11	25	July	2010	Peru	Cajamarca	3.71 km E Celendin	-6.85241	-78.11451	2857	2759	a	m	25.4	77.6	-3.37506751839176
+B72851.Cajamarca.Celendin	CA109a_Celendin	LSUMZ	B-72851	6	Celendin	432.11	25	July	2010	Peru	Cajamarca	3.71 km E Celendin	-6.85241	-78.11451	2857	2759	a	m	25.1	78.5	-3.18531643947375
+B72852.Amazonas.Duraznopampa	CA110_Duraznopampa	LSUMZ	B-72852	7	Duraznopampa	448.63	26	July	2010	Peru	Amazonas	1.12 km N Duraznopampa	-6.584	-77.814	2100	2127	a	f	19.2	67.62	0.344123075843155
+B72853.Amazonas.Duraznopampa	CA111a_Duraznopampa	LSUMZ	B-72853	7	Duraznopampa	448.63	26	July	2010	Peru	Amazonas	1.12 km N Duraznopampa	-6.584	-77.814	2100	2127	a	m	22.8	74.41	-0.618295348289273
+B72854.Amazonas.Duraznopampa	CA112_Duraznopampa	LSUMZ	B-72854	7	Duraznopampa	448.63	26	July	2010	Peru	Amazonas	1.12 km N Duraznopampa	-6.584	-77.814	2100	2127	a	m	19.3	67.86	NA
+B72855.Amazonas.Duraznopampa	CA113_Duraznopampa	LSUMZ	B-72855	7	Duraznopampa	448.63	26	July	2010	Peru	Amazonas	1.12 km N Duraznopampa	-6.584	-77.814	2100	2127	a	f	24.1	69.52	1.02749083924725
+B72856.Amazonas.Duraznopampa	CA114_Duraznopampa	LSUMZ	B-72856	7	Duraznopampa	448.63	27	July	2010	Peru	Amazonas	1 km W Duraznopampa	-6.59487	-77.81723	2038	2002	a	f	21.3	66.54	-3.2024739690554
+B72857.Amazonas.Duraznopampa	CA115_Duraznopampa	LSUMZ	B-72857	7	Duraznopampa	448.63	27	July	2010	Peru	Amazonas	1.38 km S Duraznopampa	-6.60672	-77.81327	2020	2114	a	m	20.5	69.72	-2.40417975330646
+B72858.Amazonas.Duraznopampa	CA116_Duraznopampa	LSUMZ	B-72858	7	Duraznopampa	448.63	27	July	2010	Peru	Amazonas	1.38 km S Duraznopampa	-6.60672	-77.81327	2020	2114	a	m	22.4	72.56	-4.17344475807178
+B72859.Amazonas.Duraznopampa	CA117_Duraznopampa	LSUMZ	B-72859	7	Duraznopampa	448.63	27	July	2010	Peru	Amazonas	4.13 km N Leymebamba	-6.67078	-77.80074	2103	2093	a	f	22	67.88	-5.03446146143782
+B72860.Amazonas.Duraznopampa	CA118_Duraznopampa	LSUMZ	B-72860	7	Duraznopampa	448.63	27	July	2010	Peru	Amazonas	4.13 km N Leymebamba	-6.67078	-77.80074	2100	2093	j	m	19.3	NA	NA
+B72861.Amazonas.Duraznopampa	CA119a_Duraznopampa	LSUMZ	B-72861	7	Duraznopampa	448.63	27	July	2010	Peru	Amazonas	2.3 km N Leymebamba	-6.687	-77.79885	2117	2227	a	m	24.2	71.4	-4.80518318156196
+B72827.LaLibertad.ElMolino	CA85_ElMolino	LSUMZ	B-72827	8	ElMolino	524.77	19	July	2010	Peru	LaLibertad	4 km SE El Molino	-7.78	-77.75	3200	3083	a	f	25.1	75.19	4.62423277088309
+B72828.LaLibertad.ElMolino	CA86_ElMolino	LSUMZ	B-72828	8	ElMolino	524.77	19	July	2010	Peru	LaLibertad	3.08 km SE El Molino	-7.77675	-77.75748	3150	3191	a	m	25.2	77.35	2.30743158567238
+B72829.LaLibertad.ElMolino	CA87_ElMolino	LSUMZ	B-72829	8	ElMolino	524.77	19	July	2010	Peru	LaLibertad	2.00 km SE El Molino	-7.76977	-77.76396	3170	3252	a	m	26.2	80.03	2.41816458566211
+B72830.LaLibertad.ElMolino	CA88_ElMolino	LSUMZ	B-72830	8	ElMolino	524.77	19	July	2010	Peru	LaLibertad	1.85 km SE El Molino	-7.76802	-77.76465	3125	3252	a	m	26.8	78.69	0.376675447198541
+B72831.LaLibertad.ElMolino	CA89_ElMolino	LSUMZ	B-72831	8	ElMolino	524.77	19	July	2010	Peru	LaLibertad	1.85 km SE El Molino	-7.76802	-77.76465	3125	3252	a	f	26.9	75.18	0.815959727624096
+B72832.LaLibertad.ElMolino	CA90_ElMolino	LSUMZ	B-72832	8	ElMolino	524.77	19	July	2010	Peru	LaLibertad	2.4 km SE El Molino	-7.77472	-77.76478	3180	3252	a	m	25.5	76.96	2.83793309176165
+B72833.LaLibertad.ElMolino	CA91_ElMolino	LSUMZ	B-72833	8	ElMolino	524.77	19	July	2010	Peru	LaLibertad	2.4 km SE El Molino	-7.77472	-77.76478	3180	3252	a	f	25.5	76.85	1.80385065763026
+B72834.LaLibertad.ElMolino	CA92_ElMolino	LSUMZ	B-72834	8	ElMolino	524.77	20	July	2010	Peru	LaLibertad	4.3 km SE El Molino	-7.77641	-77.74341	3190	3083	a	m	27.6	80.32	1.9264798689475
+B72835.LaLibertad.ElMolino	CA93a_ElMolino	LSUMZ	B-72835	8	ElMolino	524.77	20	July	2010	Peru	LaLibertad	4.2 km SE El Molino	-7.77578	-77.74378	3235	3083	a	f	26.8	NA	-2.18938105471051
+B72836.LaLibertad.ElMolino	CA94a_ElMolino	LSUMZ	B-72836	8	ElMolino	524.77	20	July	2010	Peru	LaLibertad	3.9 km SE El Molino	-7.77321	-77.74591	3250	3523	a	m	27	79.46	-2.6428728931454
+B72816.LaLibertad.Suyubamba	CA74_Suyubamba	LSUMZ	B-72816	9	Suyubamba	545.9	16	July	2010	Peru	LaLibertad	2 km N Vista Florida	-7.80428	-77.61461	2554	2642	j	m	23.5	NA	NA
+B72819.LaLibertad.Suyubamba	CA77a_Suyubamba	LSUMZ	B-72819	9	Suyubamba	545.9	17	July	2010	Peru	LaLibertad	1.5 km W Suyubamba	-7.8335	-77.57937	2750	2530	a	f	23.4	74.6	NA
+B72820.LaLibertad.Suyubamba	CA78_Suyubamba	LSUMZ	B-72820	9	Suyubamba	545.9	17	July	2010	Peru	LaLibertad	2 km W Suyubamba	-7.83363	-77.5811	2650	2530	a	m	26.1	78.13	-2.29846646075482
+B72821.LaLibertad.Suyubamba	CA79a_Suyubamba	LSUMZ	B-72821	9	Suyubamba	545.9	17	July	2010	Peru	LaLibertad	2 km W Suyubamba	-7.83363	-77.5811	2650	2530	a	f	24.8	75.07	-2.22033593433106
+B72822.LaLibertad.Suyubamba	CA80_Suyubamba	LSUMZ	B-72822	9	Suyubamba	545.9	17	July	2010	Peru	LaLibertad	2 km WSW Suyubamba	-7.83579	-77.58115	2530	2530	a	m	24	79.04	0.139958413438233
+B72824.LaLibertad.Suyubamba	CA82_Suyubamba	LSUMZ	B-72824	9	Suyubamba	545.9	17	July	2010	Peru	LaLibertad	1.1 km ESE Suyubamba	-7.83846	-77.56116	2800	2815	a	f	24.7	74.89	2.4025409134298
+B72826.LaLibertad.Suyubamba	CA84a_Suyubamba	LSUMZ	B-72826	9	Suyubamba	545.9	17	July	2010	Peru	LaLibertad	2.5 km NW Suyubamba	-7.82212	-77.58937	2346	2523	a	m	22.6	77.9	3.35057371777944
+FMNH_391888	CA174_Morococha	FMNH	391888	10	CorBlanca	640.26	23	Sep	1998	Ancash	Yungay	Morococha	-9.0278	-77.5456	3836	3977	u	f	NA	NA	NA
+FMNH_391889	CA175_Morococha	FMNH	391889	10	CorBlanca	640.26	24	Sep	1998	Ancash	Yungay	Morococha	-9.0278	-77.5456	3836	3977	u	m	NA	NA	NA
+FMNH_391890	CA176_Carhuaz	FMNH	391890	10	CorBlanca	640.26	11	Jun	1998	Ancash	Carhuaz	Aquilpo	-9.3522	-77.5028	3800	3532	u	m	NA	NA	NA
+NK_171703	CA4nm_Carhuaz	MSB	171703	10	CorBlanca	640.26	17	July	2010	Peru	Ancash	16.0 km SE Carhuaz	-9.345465	-77.509202	3439	3428	j	f	21.62	NA	NA
+NK_171708	CA5nm_Carhuaz	MSB	171708	10	CorBlanca	640.26	17	July	2010	Peru	Ancash	16.0 km SE Carhuaz	-9.345465	-77.509202	3439	3428	a	f	24.29	NA	NA
+NK_171709	CA6nm_Carhuaz	MSB	171709	10	CorBlanca	640.26	17	July	2010	Peru	Ancash	16.0 km SE Carhuaz	-9.345465	-77.509202	3439	3428	a	f	23.61	NA	NA
+B72894.Ancash.Chinchan	CA151_Chinchan	LSUMZ	B-72894	11	Chinchan	704.52	21	August	2011	Peru	Ancash	Valle Chinchan, 5.75 km SE Chavin de Huantar	-9.618307	-77.113379	4225	4383	a	f	27.5	77.14	NA
+B72895.Ancash.Chinchan	CA152_Chinchan	LSUMZ	B-72895	11	Chinchan	704.52	21	August	2011	Peru	Ancash	Valle Chinchan, 5.75 km SE Chavin de Huantar	-9.618307	-77.113379	4225	4383	a	m	27.5	83.66	NA
+B72896.Ancash.Chinchan	CA153_Chinchan	LSUMZ	B-72896	11	Chinchan	704.52	21	August	2011	Peru	Ancash	Valle Chinchan, 5.75 km SE Chavin de Huantar	-9.618307	-77.113379	4175	4383	a	m	26.2	81.03	NA
+B72899.Ancash.Chinchan	CA156_Chinchan	LSUMZ	B-72899	11	Chinchan	704.52	21	August	2011	Peru	Ancash	Valle Chinchan, 5.75 km SE Chavin de Huantar	-9.619	-77.118	4150	4213	a	m	25.2	NA	NA
+B72900.Ancash.Chinchan	CA157_Chinchan	LSUMZ	B-72900	11	Chinchan	704.52	21	August	2011	Peru	Ancash	Valle Chinchan, 5.75 km SE Chavin de Huantar	-9.621	-77.124	3975	4213	a	f	25.7	79.03	NA
+B72901.Ancash.Chinchan	CA158_Chinchan	LSUMZ	B-72901	11	Chinchan	704.52	21	August	2011	Peru	Ancash	Valle Chinchan, 5.75 km SE Chavin de Huantar	-9.621	-77.124	3950	4213	a	m	27.5	81.12	NA
+B72902.Ancash.Chinchan	CA159_Chinchan	LSUMZ	B-72902	11	Chinchan	704.52	21	August	2011	Peru	Ancash	Valle Chinchan, 5.75 km SE Chavin de Huantar	-9.623	-77.131	3875	4043	a	f	26.8	81.04	NA
+NK_173896	CA11nm_Chinchan	MSB	173896	11	Chinchan	704.52	26	May	2011	Peru	Ancash	San Marcos	-9.51136	-77.0948	3920	4045	a	m	24.08	NA	NA
+B72793.Huanuco.CarpaChavin	CA51_CarpaChavin	LSUMZ	B-72793	12	CarpaChavin	731.37	30	June	2010	Peru	Huanuco	2 km NE Chavin de Pariarca	-9.4095	-76.76423	3500	3549	a	m	28	80.47	5.67930733262855
+B72794.Huanuco.CarpaChavin	CA52b_CarpaChavin	LSUMZ	B-72794	12	CarpaChavin	731.37	30	June	2010	Peru	Huanuco	2 km NE Chavin de Pariarca	-9.4095	-76.76423	3500	3549	j	f	25.3	NA	NA
+B72795.Huanuco.CarpaChavin	CA53_CarpaChavin	LSUMZ	B-72795	12	CarpaChavin	731.37	30	June	2010	Peru	Huanuco	2 km NE Chavin de Pariarca	-9.4095	-76.76423	3500	3549	a	f	27.4	77.16	5.23832261450486
+B72796.Huanuco.CarpaChavin	CA54b_CarpaChavin	LSUMZ	B-72796	12	CarpaChavin	731.37	1	July	2010	Peru	Huanuco	1 km W Carpa	-9.31418	-76.68034	3650	3728	a	m	29.9	82.11	4.59097388988789
+B72797.Huanuco.CarpaChavin	CA55b_CarpaChavin	LSUMZ	B-72797	12	CarpaChavin	731.37	1	July	2010	Peru	Huanuco	1 km W Carpa	-9.31418	-76.68034	3650	3728	a	m	24.2	75.25	5.56600590137496
+B72798.Huanuco.CarpaChavin	CA56b_CarpaChavin	LSUMZ	B-72798	12	CarpaChavin	731.37	1	July	2010	Peru	Huanuco	1 km W Carpa	-9.31418	-76.68034	3650	3728	a	f	25.1	76.04	7.31318855075007
+B72799.Huanuco.CarpaChavin	CA57b_CarpaChavin	LSUMZ	B-72799	12	CarpaChavin	731.37	1	July	2010	Peru	Huanuco	1 km W Carpa	-9.31418	-76.68034	3650	3728	a	f	28.1	NA	6.07189591934296
+B72800.Huanuco.CarpaChavin	CA58_CarpaChavin	LSUMZ	B-72800	12	CarpaChavin	731.37	1	July	2010	Peru	Huanuco	1 km W Carpa	-9.31418	-76.68034	3650	3728	a	m	27.1	81.36	5.56417777933447
+B72801.Huanuco.CarpaChavin	CA59_CarpaChavin	LSUMZ	B-72801	12	CarpaChavin	731.37	1	July	2010	Peru	Huanuco	1 km W Carpa	-9.31418	-76.68034	3650	3728	a	m	29.7	82.33	6.1215460175189
+B72802.Huanuco.CarpaChavin	CA60_CarpaChavin	LSUMZ	B-72802	12	CarpaChavin	731.37	2	July	2010	Peru	Huanuco	2 km NE Chavin de Pariarca	-9.4095	-76.76423	3500	3549	a	m	28.7	NA	7.81324198203077
+B72803.Huanuco.CarpaChavin	CA61_CarpaChavin	LSUMZ	B-72803	12	CarpaChavin	731.37	2	July	2010	Peru	Huanuco	2 km NE Chavin de Pariarca	-9.4095	-76.76423	3500	3549	a	m	27.8	79.31	3.94724872787492
+B72804.Huanuco.CarpaChavin	CA62_CarpaChavin	LSUMZ	B-72804	12	CarpaChavin	731.37	2	July	2010	Peru	Huanuco	2 km NE Chavin de Pariarca	-9.4095	-76.76423	3500	3549	a	f	25.1	74.18	6.36533520541686
+B72805.Huanuco.CarpaChavin	CA63_CarpaChavin	LSUMZ	B-72805	12	CarpaChavin	731.37	2	July	2010	Peru	Huanuco	2 km NE Chavin de Pariarca	-9.4095	-76.76423	3500	3549	j	f	19.2	NA	NA
+B72788.Huanuco.Chavinillo	CA46_Chavinillo	LSUMZ	B-72788	13	Chavinillo	772.86	29	June	2010	Peru	Huanuco	Chilcarajaray, 2.56 km N Chavinillo	-9.8332	-76.6055	3700	3826	a	m	28	72.39	6.19073077839906
+B72789.Huanuco.Chavinillo	CA47b_Chavinillo	LSUMZ	B-72789	13	Chavinillo	772.86	29	June	2010	Peru	Huanuco	Chilcarajaray, 2.56 km N Chavinillo	-9.8332	-76.6055	3700	3826	a	f	28.9	78.88	4.20417692440264
+B72790.Huanuco.Chavinillo	CA48_Chavinillo	LSUMZ	B-72790	13	Chavinillo	772.86	29	June	2010	Peru	Huanuco	Chilcarajaray, 2.56 km N Chavinillo	-9.8332	-76.6055	3700	3826	j	m	23.3	NA	NA
+B72791.Huanuco.Chavinillo	CA49b_Chavinillo	LSUMZ	B-72791	13	Chavinillo	772.86	29	June	2010	Peru	Huanuco	San Juan de Jaranapatay, 2.23 km NE Chavinillo	-9.8391	-76.59653	3550	3390	j	m	27.6	NA	NA
+B72792.Huanuco.Chavinillo	CA50_Chavinillo	LSUMZ	B-72792	13	Chavinillo	772.86	29	June	2010	Peru	Huanuco	San Juan de Jaranapatay, 2.23 km NE Chavinillo	-9.8391	-76.59653	3550	3390	a	m	31	78.4	4.64515460144022
+B72761.Huanuco.Acomayo	CA19b_Acomayo	LSUMZ	B-72761	14	Carpish	809.81	18	June	2010	Peru	Huanuco	Mayobamba alta, 1 km W Mayobamba	-9.75282	-76.10493	2891	2805	a	f	26.6	74.7	4.59532752273502
+B72762.Huanuco.Acomayo	CA20b_Acomayo	LSUMZ	B-72762	14	Carpish	809.81	18	June	2010	Peru	Huanuco	Mayobamba alta, 1 km W Mayobamba	-9.75282	-76.10493	2891	2805	a	m	30.9	77.35	4.64451476929015
+B72766.Huanuco.Mitotambo	CA24b_Mitotambo	LSUMZ	B-72766	14	Carpish	809.81	22	June	2010	Peru	Huanuco	Rincon, 2 km N Mitotambo	-9.87417	-76.42155	3200	3350	a	m	29.4	79.34	3.60955479641211
+B72767.Huanuco.Mitotambo	CA25b_Mitotambo	LSUMZ	B-72767	14	Carpish	809.81	22	June	2010	Peru	Huanuco	Rincon, 2 km N Mitotambo	-9.87417	-76.42155	3200	3350	a	f	NA	NA	NA
+B72768.Huanuco.Mitotambo	CA26_Mitotambo	LSUMZ	B-72768	14	Carpish	809.81	22	June	2010	Peru	Huanuco	Rincon, 2 km N Mitotambo	-9.87417	-76.42155	3200	3350	a	m	27.3	75.51	3.592279638334
+B72769.Huanuco.Mitotambo	CA27b_Mitotambo	LSUMZ	B-72769	14	Carpish	809.81	22	June	2010	Peru	Huanuco	Rincon, 2 km N Mitotambo	-9.87417	-76.42155	3200	3350	a	f	29.2	77.91	NA
+B72770.Huanuco.Mitotambo	CA28b_Mitotambo	LSUMZ	B-72770	14	Carpish	809.81	22	June	2010	Peru	Huanuco	Rincon, 2 km N Mitotambo	-9.87417	-76.42155	3200	3350	j	f	23.7	NA	NA
+B72771.Huanuco.Mitotambo	CA29b_Mitotambo	LSUMZ	B-72771	14	Carpish	809.81	22	June	2010	Peru	Huanuco	Rincon, 2 km N Mitotambo	-9.87417	-76.42155	3200	3350	j	m	25.5	NA	NA
+B72772.Huanuco.Mitotambo	CA30b_Mitotambo	LSUMZ	B-72772	14	Carpish	809.81	23	June	2010	Peru	Huanuco	Rincon, 2 km N Mitotambo	-9.87417	-76.42155	3200	3350	a	m	28.5	81.63	3.57623900867539
+B72773.Huanuco.Mitotambo	CA31b_Mitotambo	LSUMZ	B-72773	14	Carpish	809.81	23	June	2010	Peru	Huanuco	Rincon, 2 km N Mitotambo	-9.87417	-76.42155	3200	3350	a	m	28	80.01	2.09107366739561
+B72774.Huanuco.Mitotambo	CA32b_Mitotambo	LSUMZ	B-72774	14	Carpish	809.81	23	June	2010	Peru	Huanuco	Rincon, 2 km N Mitotambo	-9.87417	-76.42155	3200	3350	a	f	27.7	78.23	5.33785393608595
+B72775.Huanuco.Mitotambo	CA33b_Mitotambo	LSUMZ	B-72775	14	Carpish	809.81	23	June	2010	Peru	Huanuco	Rincon, 2 km N Mitotambo	-9.87417	-76.42155	3200	3350	a	f	28.9	76.51	NA
+B72753.Pasco.LaQuinua	CA11b_LaQuinua	LSUMZ	B-72753	15	LaQuinua	864.87	15	June	2010	Peru	Pasco	hills 1 km E La Quinua	-10.61816	-76.17191	3780	3832	a	f	27.6	77.95	7.08200040660357
+B72754.Pasco.LaQuinua	CA12_LaQuinua	LSUMZ	B-72754	15	LaQuinua	864.87	15	June	2010	Peru	Pasco	hills 1 km E La Quinua	-10.61816	-76.17191	3780	3832	a	m	29.3	83.51	6.35301851068248
+B72755.Pasco.LaQuinua	CA13b_LaQuinua	LSUMZ	B-72755	15	LaQuinua	864.87	15	June	2010	Peru	Pasco	hills 1 km E La Quinua	-10.61816	-76.17191	3780	3832	a	f	29.8	79.63	NA
+B72756.Pasco.LaQuinua	CA14b_LaQuinua	LSUMZ	B-72756	15	LaQuinua	864.87	15	June	2010	Peru	Pasco	hills 1 km E La Quinua	-10.61816	-76.17191	3780	3832	a	m	30.7	82.43	6.85605562403493
+B72757.Pasco.LaQuinua	CA15b_LaQuinua	LSUMZ	B-72757	15	LaQuinua	864.87	15	June	2010	Peru	Pasco	hills 1 km E La Quinua	-10.61816	-76.17191	3780	3832	a	f	30.3	77.33	4.97119305186431
+B72758.Pasco.LaQuinua	CA16b_LaQuinua	LSUMZ	B-72758	15	LaQuinua	864.87	16	June	2010	Peru	Pasco	hills 1 km E La Quinua	-10.61816	-76.17191	3780	3832	a	m	30	83.21	6.66046736020571
+B72759.Pasco.LaQuinua	CA17b_LaQuinua	LSUMZ	B-72759	15	LaQuinua	864.87	16	June	2010	Peru	Pasco	hills 1 km E La Quinua	-10.61816	-76.17191	3780	3832	a	m	28.7	81.56	5.93936397622684
+B72760.Pasco.LaQuinua	CA18_LaQuinua	LSUMZ	B-72760	15	LaQuinua	864.87	16	June	2010	Peru	Pasco	hills 1 km E La Quinua	-10.61816	-76.17191	3780	3832	a	m	30.1	80.13	4.95280249561968
+B72806.Ancash.Macate	CA64b_Macate	LSUMZ	B-72806	16	Macate	553.39	10	July	2010	Peru	Ancash	Macate	-8.75478	-78.04845	2950	3111	a	m	22.7	74.56	-4.41865956826926
+B72807.Ancash.Macate	CA65_Macate	LSUMZ	B-72807	16	Macate	553.39	10	July	2010	Peru	Ancash	Macate	-8.75478	-78.04845	2950	3111	a	?	20.7	70.29	-4.18114002449519
+B72808.Ancash.Macate	CA66_Macate	LSUMZ	B-72808	16	Macate	553.39	11	July	2010	Peru	Ancash	Macate	-8.75478	-78.04845	2950	3111	a	m	21.7	NA	NA
+B72809.Ancash.Macate	CA67b_Macate	LSUMZ	B-72809	16	Macate	553.39	10	July	2010	Peru	Ancash	Macate	-8.75478	-78.04845	2950	3111	a	f	20.7	69.99	-3.0608909191547
+B72810.Ancash.Macate	CA68_Macate	LSUMZ	B-72810	16	Macate	553.39	12	July	2010	Peru	Ancash	Macate	-8.75478	-78.04845	2950	3111	a	f	22.6	68.17	-3.68794454285009
+B72811.Ancash.Macate	CA69_Macate	LSUMZ	B-72811	16	Macate	553.39	12	July	2010	Peru	Ancash	Macate	-8.75478	-78.04845	2950	3111	a	m	20.8	73.51	-4.43458392547863
+B72812.Ancash.Macate	CA70b_Macate	LSUMZ	B-72812	16	Macate	553.39	12	July	2010	Peru	Ancash	Macate	-8.74132	-78.05166	3326	3546	a	m	27	73.93	-2.61217995413549
+B72813.Ancash.Macate	CA71_Macate	LSUMZ	B-72813	16	Macate	553.39	12	July	2010	Peru	Ancash	Macate	-8.74132	-78.05166	3326	3546	a	f	21.6	70.17	-2.64890395323254
+B72814.Ancash.Macate	CA72b_Macate	LSUMZ	B-72814	16	Macate	553.39	12	July	2010	Peru	Ancash	Macate	-8.74496	-78.04255	3613	3445	a	f	23.9	70.9	-4.61649499311845
+B72815.Ancash.Macate	CA73_Macate	LSUMZ	B-72815	16	Macate	553.39	12	July	2010	Peru	Ancash	Macate	-8.74308	-78.03952	3713	3629	a	f	24.9	73.8	-3.58698566890143
+NK_171570	CA2nm_Macate	MSB	171570	16	Macate	553.39	9	July	2010	Peru	Ancash	Macate	-8.75478	-78.04845	2972	3111	a	m	20	NA	NA
+NK_173870	CA10nm_Macate	MSB	173870	16	Macate	553.39	20	May	2011	Peru	Ancash	Macate	-8.74247	-78.0407	3740	3629	a	m	23.49	NA	NA
+B72904.Ancash.Pacar	CA161a_Pacar	LSUMZ	B-72904	17	Pacar	692.7	22	August	2011	Peru	Ancash	Pacar, 2.6 km. NW Marca	-10.079	-77.498	2759	2888	a	m	18.2	68.93	NA
+B72905.Ancash.Pacar	CA162_Pacar	LSUMZ	B-72905	17	Pacar	692.7	22	August	2011	Peru	Ancash	Pacar, 2.6 km. NW Marca	-10.079	-77.496	2885	2888	j	m	15.2	NA	NA
+B72906.Ancash.Pacar	CA163a_Pacar	LSUMZ	B-72906	17	Pacar	692.7	22	August	2011	Peru	Ancash	Pacar, 2.6 km. NW Marca	-10.078	-77.495	2913	2888	a	f	18.2	65.79	NA
+B72907.Ancash.Pacar	CA164_Pacar	LSUMZ	B-72907	17	Pacar	692.7	22	August	2011	Peru	Ancash	Pacar, 2.6 km. NW Marca	-10.075	-77.494	2916	2888	a	m	17.9	69.65	NA
+B72908.Ancash.Pacar	CA165_Pacar	LSUMZ	B-72908	17	Pacar	692.7	22	August	2011	Peru	Ancash	Pacar, 2.6 km. NW Marca	-10.075	-77.494	2916	2888	a	f	17.5	66.14	NA
+B72909.Ancash.Pacar	CA166_Pacar	LSUMZ	B-72909	17	Pacar	692.7	22	August	2011	Peru	Ancash	Pacar, 2.6 km. NW Marca	-10.074	-77.494	2913	2993	a	m	NA	70.78	NA
+B72910.Ancash.Pacar	CA167_Pacar	LSUMZ	B-72910	17	Pacar	692.7	22	August	2011	Peru	Ancash	Pacar, 2.6 km. NW Marca	-10.072	-77.494	2912	2993	a	m	18.4	67.14	NA
+B72911.Ancash.Pacar	CA168_Pacar	LSUMZ	B-72911	17	Pacar	692.7	22	August	2011	Peru	Ancash	Pacar, 2.6 km. NW Marca	-10.074	-77.496	2704	2993	a	m	18.8	71.46	NA
+B72912.Ancash.Pacar	CA169a_Pacar	LSUMZ	B-72912	17	Pacar	692.7	22	August	2011	Peru	Ancash	Pacar, 2.6 km. NW Marca	-10.074	-77.496	2704	2993	a	m	18.8	68.4	NA
+B72776.Lima.Quichas	CA34b_Quichas	LSUMZ	B-72776	18	Quichas	800.16	26	June	2010	Peru	Lima	2 km NNE Quichas	-10.56675	-76.75586	4100	4273	a	f	19.1	68.21	4.57072320531817
+B72777.Lima.Quichas	CA35b_Quichas	LSUMZ	B-72777	18	Quichas	800.16	26	June	2010	Peru	Lima	2 km NNE Quichas	-10.56675	-76.75586	4100	4273	a	m	21.4	66.33	6.31348112954308
+B72778.Lima.Quichas	CA36_Quichas	LSUMZ	B-72778	18	Quichas	800.16	26	June	2010	Peru	Lima	2 km NNE Quichas	-10.5635	-76.7579	4300	4344	a	f	19.9	65.82	6.45732130233968
+B72779.Lima.Quichas	CA37b_Quichas	LSUMZ	B-72779	18	Quichas	800.16	26	June	2010	Peru	Lima	2 km NNE Quichas	-10.5635	-76.7579	4300	4344	a	m	20.9	NA	6.01707536106259
+B72780.Lima.Quichas	CA38b_Quichas	LSUMZ	B-72780	18	Quichas	800.16	26	June	2010	Peru	Lima	2 km NNE Quichas	-10.56875	-76.75785	4050	4273	a	m	21.1	NA	4.81650648588435
+B72781.Lima.Quichas	CA39b_Quichas	LSUMZ	B-72781	18	Quichas	800.16	27	June	2010	Peru	Lima	2 km NNE Quichas	-10.569925	-76.756596	4060	4273	a	f	19.4	67.11	5.25643066076901
+B72782.Lima.Quichas	CA40b_Quichas	LSUMZ	B-72782	18	Quichas	800.16	27	June	2010	Peru	Lima	2 km NNE Quichas	-10.56789	-76.75635	4060	4273	j	m	18.8	NA	NA
+B72783.Lima.Quichas	CA41_Quichas	LSUMZ	B-72783	18	Quichas	800.16	27	June	2010	Peru	Lima	2 km NNE Quichas	-10.56789	-76.75635	4060	4273	j	f	17.6	NA	NA
+B72784.Lima.Quichas	CA42_Quichas	LSUMZ	B-72784	18	Quichas	800.16	27	June	2010	Peru	Lima	2 km NNE Quichas	-10.56789	-76.75635	4060	4273	a	m	19.6	NA	NA
+B72785.Lima.Quichas	CA43b_Quichas	LSUMZ	B-72785	18	Quichas	800.16	27	June	2010	Peru	Lima	2 km NNE Quichas	-10.56789	-76.75635	4060	4273	a	f	19.7	69.74	3.43171018438826
+B72786.Lima.Quichas	CA44b_Quichas	LSUMZ	B-72786	18	Quichas	800.16	27	June	2010	Peru	Lima	2 km NNE Quichas	-10.56789	-76.75635	4060	4273	j	m	19	NA	NA
+B72787.Lima.Quichas	CA45_Quichas	LSUMZ	B-72787	18	Quichas	800.16	27	June	2010	Peru	Lima	2 km NNE Quichas	-10.56789	-76.75635	4060	4273	a	m	19.7	NA	NA
+FMNH_391884	CA170_Quichas	FMNH	391884	18	Quichas	800.16	9	Sep	1998	Lima	Oyon	Maticuna	-10.65	-76.8333	3990	4410	u	m	NA	NA	NA
+FMNH_391885	CA171_Quichas	FMNH	391885	18	Quichas	800.16	10	Sep	1998	Lima	Oyon	Maticuna	-10.65	-76.8333	3990	4410	u	NA	NA	NA	NA
+FMNH_391887	CA173_Quichas	FMNH	391887	18	Quichas	800.16	12	Sep	1998	Lima	Oyon	Maticuna	-10.65	-76.8333	3990	4410	u	f	NA	NA	NA
+FMNH_391891	CA177_Quichas	FMNH	391891	18	Quichas	800.16	8	Jul	1998	Lima	Oyon	Quichas	-10.55	-76.7667	4200	4224	u	m	NA	NA	NA
+B72889.Lima.Huamatanga	CA146a_Huamatanga	LSUMZ	B-72889	19	Huamatanga	862	19	August	2011	Peru	Lima	km. 17 between San Jose and Huamantagna, 5.5 km. W San Jose	-11.515	-76.729	3245	3241	a	m	21.9	68.41	NA
+B72892.Lima.Huamatanga	CA149_Huamatanga	LSUMZ	B-72892	19	Huamatanga	862	19	August	2011	Peru	Lima	km. 17 between San Jose and Huamantagna, 5.5 km. W San Jose	-11.519	-76.723	3055	2764	a	f	21	NA	NA

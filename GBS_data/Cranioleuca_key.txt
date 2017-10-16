@@ -1,0 +1,194 @@
+Flowcell	Lane	Barcode	DNASample	LibraryPlate	Row	Col	LibraryPrepID	LibraryPlateID	Enzyme	BarcodeWell	DNA_Plate	SampleDNA_Well	Genus	Species	Pedigree	Population	SeedLot	FullSampleName
+D25GWACXX	5	TGACGCCA	1	Brumfield_1	A	1	250181060	450017033	PstI	A01	Brumfield_1	A01	Cranioleuca	antisiensis	NA	Amotape	cra.ant.67126.Tumbes.Amotape	1:D25GWACXX:5:250181060
+D25GWACXX	5	CAGATA	2a	Brumfield_1	B	1	250181061	450017033	PstI	B01	Brumfield_1	B01	Cranioleuca	antisiensis	NA	Amotape	cra.ant.67127.Tumbes.Amotape	2a:D25GWACXX:5:250181061
+D25GWACXX	5	GAAGTG	3	Brumfield_1	C	1	250181062	450017033	PstI	C01	Brumfield_1	C01	Cranioleuca	antisiensis	NA	Amotape	cra.ant.67136.Tumbes.Amotape	3:D25GWACXX:5:250181062
+D25GWACXX	5	TAGCGGAT	4	Brumfield_1	D	1	250181063	450017033	PstI	D01	Brumfield_1	D01	Cranioleuca	antisiensis	NA	Amotape	cra.ant.67166.Tumbes.Amotape	4:D25GWACXX:5:250181063
+D25GWACXX	5	TATTCGCAT	5	Brumfield_1	E	1	250181064	450017033	PstI	E01	Brumfield_1	E01	Cranioleuca	antisiensis	NA	Amotape	cra.ant.67177.Tumbes.Amotape	5:D25GWACXX:5:250181064
+D25GWACXX	5	ATAGAT	6	Brumfield_1	F	1	250181065	450017033	PstI	F01	Brumfield_1	F01	Cranioleuca	antisiensis	NA	Amotape	cra.ant.67179.Tumbes.Amotape	6:D25GWACXX:5:250181065
+D25GWACXX	5	CCGAACA	7	Brumfield_1	G	1	250181066	450017033	PstI	G01	Brumfield_1	G01	Cranioleuca	antisiensis	NA	Amotape	cra.ant.67201.Tumbes.Amotape	7:D25GWACXX:5:250181066
+D25GWACXX	5	GGAAGACAT	8	Brumfield_1	H	1	250181067	450017033	PstI	H01	Brumfield_1	H01	Cranioleuca	antisiensis	NA	Amotape	cra.ant.67243.Tumbes.Amotape	8:D25GWACXX:5:250181067
+D25GWACXX	5	GGCTTA	9a	Brumfield_1	A	2	250181068	450017033	PstI	A02	Brumfield_1	A02	Cranioleuca	antisiensis	NA	Amotape	cra.ant.67257.Tumbes.Amotape	9a:D25GWACXX:5:250181068
+D25GWACXX	5	GAGCGACAT	10	Brumfield_1	C	2	250181070	450017033	PstI	C02	Brumfield_1	C02	Cranioleuca	antisiensis	NA	Amotape	cra.ant.67273.Tumbes.Amotape	10:D25GWACXX:5:250181070
+D25GWACXX	5	CCTTGCCATT	11b	Brumfield_1	D	2	250181071	450017033	PstI	D02	Brumfield_1	D02	Cranioleuca	antisiensis	NA	LaQuinua	cra.ant.72753.Pasco.LaQuinua	11b:D25GWACXX:5:250181071
+D25GWACXX	5	GGTATA	12	Brumfield_1	E	2	250181072	450017033	PstI	E02	Brumfield_1	E02	Cranioleuca	antisiensis	NA	LaQuinua	cra.ant.72754.Pasco.LaQuinua	12:D25GWACXX:5:250181072
+D25GWACXX	5	TCTTGG	13b	Brumfield_1	F	2	250181073	450017033	PstI	F02	Brumfield_1	F02	Cranioleuca	antisiensis	NA	LaQuinua	cra.ant.72755.Pasco.LaQuinua	13b:D25GWACXX:5:250181073
+D25GWACXX	5	GGTGT	14b	Brumfield_1	G	2	250181074	450017033	PstI	G02	Brumfield_1	G02	Cranioleuca	antisiensis	NA	LaQuinua	cra.ant.72756.Pasco.LaQuinua	14b:D25GWACXX:5:250181074
+D25GWACXX	5	GGATA	15b	Brumfield_1	H	2	250181075	450017033	PstI	H02	Brumfield_1	H02	Cranioleuca	antisiensis	NA	LaQuinua	cra.ant.72757.Pasco.LaQuinua	15b:D25GWACXX:5:250181075
+D25GWACXX	5	CTAAGCA	16b	Brumfield_1	A	3	250181076	450017033	PstI	A03	Brumfield_1	A03	Cranioleuca	antisiensis	NA	LaQuinua	cra.ant.72758.Pasco.LaQuinua	16b:D25GWACXX:5:250181076
+D25GWACXX	5	ATTAT	17b	Brumfield_1	B	3	250181077	450017033	PstI	B03	Brumfield_1	B03	Cranioleuca	antisiensis	NA	LaQuinua	cra.ant.72759.Pasco.LaQuinua	17b:D25GWACXX:5:250181077
+D25GWACXX	5	GCGCTCA	18	Brumfield_1	C	3	250181078	450017033	PstI	C03	Brumfield_1	C03	Cranioleuca	antisiensis	NA	LaQuinua	cra.ant.72760.Pasco.LaQuinua	18:D25GWACXX:5:250181078
+D25GWACXX	5	ACTGCGAT	19b	Brumfield_1	D	3	250181079	450017033	PstI	D03	Brumfield_1	D03	Cranioleuca	antisiensis	NA	Acomayo	cra.ant.72761.Huanuco.Acomayo	19b:D25GWACXX:5:250181079
+D25GWACXX	5	TTCGTT	20b	Brumfield_1	E	3	250181080	450017033	PstI	E03	Brumfield_1	E03	Cranioleuca	antisiensis	NA	Acomayo	cra.ant.72762.Huanuco.Acomayo	20b:D25GWACXX:5:250181080
+D25GWACXX	5	ATATAA	24b	Brumfield_1	F	3	250181081	450017033	PstI	F03	Brumfield_1	F03	Cranioleuca	antisiensis	NA	Mitotambo	cra.ant.72766.Huanuco.Mitotambo	24b:D25GWACXX:5:250181081
+D25GWACXX	5	TGGCAACAGA	25b	Brumfield_1	G	3	250181082	450017033	PstI	G03	Brumfield_1	G03	Cranioleuca	antisiensis	NA	Mitotambo	cra.ant.72767.Huanuco.Mitotambo	25b:D25GWACXX:5:250181082
+D25GWACXX	5	CTCGTCG	26	Brumfield_1	H	3	250181083	450017033	PstI	H03	Brumfield_1	H03	Cranioleuca	antisiensis	NA	Mitotambo	cra.ant.72768.Huanuco.Mitotambo	26:D25GWACXX:5:250181083
+D25GWACXX	5	GCCTACCT	27b	Brumfield_1	A	4	250181084	450017033	PstI	A04	Brumfield_1	A04	Cranioleuca	antisiensis	NA	Mitotambo	cra.ant.72769.Huanuco.Mitotambo	27b:D25GWACXX:5:250181084
+D25GWACXX	5	CACCA	28b	Brumfield_1	B	4	250181085	450017033	PstI	B04	Brumfield_1	B04	Cranioleuca	antisiensis	NA	Mitotambo	cra.ant.72770.Huanuco.Mitotambo	28b:D25GWACXX:5:250181085
+D25GWACXX	5	AATTAG	29b	Brumfield_1	C	4	250181086	450017033	PstI	C04	Brumfield_1	C04	Cranioleuca	antisiensis	NA	Mitotambo	cra.ant.72771.Huanuco.Mitotambo	29b:D25GWACXX:5:250181086
+D25GWACXX	5	GGAACGA	30b	Brumfield_1	D	4	250181087	450017033	PstI	D04	Brumfield_1	D04	Cranioleuca	antisiensis	NA	Mitotambo	cra.ant.72772.Huanuco.Mitotambo	30b:D25GWACXX:5:250181087
+D25GWACXX	5	ACAACT	31b	Brumfield_1	E	4	250181088	450017033	PstI	E04	Brumfield_1	E04	Cranioleuca	antisiensis	NA	Mitotambo	cra.ant.72773.Huanuco.Mitotambo	31b:D25GWACXX:5:250181088
+D25GWACXX	5	ACTGCT	32b	Brumfield_1	F	4	250181089	450017033	PstI	F04	Brumfield_1	F04	Cranioleuca	antisiensis	NA	Mitotambo	cra.ant.72774.Huanuco.Mitotambo	32b:D25GWACXX:5:250181089
+D25GWACXX	5	CGTGGACAGT	33b	Brumfield_1	G	4	250181090	450017033	PstI	G04	Brumfield_1	G04	Cranioleuca	antisiensis	NA	Mitotambo	cra.ant.72775.Huanuco.Mitotambo	33b:D25GWACXX:5:250181090
+D25GWACXX	5	TGGCACAGA	34b	Brumfield_1	H	4	250181091	450017033	PstI	H04	Brumfield_1	H04	Cranioleuca	antisiensis	NA	Quichas	cra.ant.72776.Lima.Quichas	34b:D25GWACXX:5:250181091
+D25GWACXX	5	TGCTT	35b	Brumfield_1	A	5	250181092	450017033	PstI	A05	Brumfield_1	A05	Cranioleuca	antisiensis	NA	Quichas	cra.ant.72777.Lima.Quichas	35b:D25GWACXX:5:250181092
+D25GWACXX	5	GCAAGCCAT	36	Brumfield_1	B	5	250181093	450017033	PstI	B05	Brumfield_1	B05	Cranioleuca	antisiensis	NA	Quichas	cra.ant.72778.Lima.Quichas	36:D25GWACXX:5:250181093
+D25GWACXX	5	CGCACCAATT	37b	Brumfield_1	C	5	250181094	450017033	PstI	C05	Brumfield_1	C05	Cranioleuca	antisiensis	NA	Quichas	cra.ant.72779.Lima.Quichas	37b:D25GWACXX:5:250181094
+D25GWACXX	5	CTCGCGG	38b	Brumfield_1	D	5	250181095	450017033	PstI	D05	Brumfield_1	D05	Cranioleuca	antisiensis	NA	Quichas	cra.ant.72780.Lima.Quichas	38b:D25GWACXX:5:250181095
+D25GWACXX	5	AACTGG	39b	Brumfield_1	E	5	250181096	450017033	PstI	E05	Brumfield_1	E05	Cranioleuca	antisiensis	NA	Quichas	cra.ant.72781.Lima.Quichas	39b:D25GWACXX:5:250181096
+D25GWACXX	5	ATGAGCAA	40b	Brumfield_1	F	5	250181097	450017033	PstI	F05	Brumfield_1	F05	Cranioleuca	antisiensis	NA	Quichas	cra.ant.72782.Lima.Quichas	40b:D25GWACXX:5:250181097
+D25GWACXX	5	CTTGA	41	Brumfield_1	G	5	250181098	450017033	PstI	G05	Brumfield_1	G05	Cranioleuca	antisiensis	NA	Quichas	cra.ant.72783.Lima.Quichas	41:D25GWACXX:5:250181098
+D25GWACXX	5	GCGTCCT	42	Brumfield_1	H	5	250181099	450017033	PstI	H05	Brumfield_1	H05	Cranioleuca	antisiensis	NA	Quichas	cra.ant.72784.Lima.Quichas	42:D25GWACXX:5:250181099
+D25GWACXX	5	ACCAGGA	43b	Brumfield_1	A	6	250181100	450017033	PstI	A06	Brumfield_1	A06	Cranioleuca	antisiensis	NA	Quichas	cra.ant.72785.Lima.Quichas	43b:D25GWACXX:5:250181100
+D25GWACXX	5	CCACTCA	44b	Brumfield_1	B	6	250181101	450017033	PstI	B06	Brumfield_1	B06	Cranioleuca	antisiensis	NA	Quichas	cra.ant.72786.Lima.Quichas	44b:D25GWACXX:5:250181101
+D25GWACXX	5	TCACGGAAG	45	Brumfield_1	C	6	250181102	450017033	PstI	C06	Brumfield_1	C06	Cranioleuca	antisiensis	NA	Quichas	cra.ant.72787.Lima.Quichas	45:D25GWACXX:5:250181102
+D25GWACXX	5	TATCA	46	Brumfield_1	D	6	250181103	450017033	PstI	D06	Brumfield_1	D06	Cranioleuca	antisiensis	NA	Chavinillo	cra.ant.72788.Huanuco.Chavinillo	46:D25GWACXX:5:250181103
+D25GWACXX	5	TAGCCAA	47b	Brumfield_1	E	6	250181104	450017033	PstI	E06	Brumfield_1	E06	Cranioleuca	antisiensis	NA	Chavinillo	cra.ant.72789.Huanuco.Chavinillo	47b:D25GWACXX:5:250181104
+D25GWACXX	5	ATATCGCCA	48	Brumfield_1	F	6	250181105	450017033	PstI	F06	Brumfield_1	F06	Cranioleuca	antisiensis	NA	Chavinillo	cra.ant.72790.Huanuco.Chavinillo	48:D25GWACXX:5:250181105
+D25GWACXX	5	CTCTA	49b	Brumfield_1	G	6	250181106	450017033	PstI	G06	Brumfield_1	G06	Cranioleuca	antisiensis	NA	Chavinillo	cra.ant.72791.Huanuco.Chavinillo	49b:D25GWACXX:5:250181106
+D25GWACXX	5	GGTGCACATT	50	Brumfield_1	H	6	250181107	450017033	PstI	H06	Brumfield_1	H06	Cranioleuca	antisiensis	NA	Chavinillo	cra.ant.72792.Huanuco.Chavinillo	50:D25GWACXX:5:250181107
+D25GWACXX	5	CTCTCGCAT	51	Brumfield_1	A	7	250181108	450017033	PstI	A07	Brumfield_1	A07	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72793.Huanuco.CarpaChavin	51:D25GWACXX:5:250181108
+D25GWACXX	5	CAGAGGT	52b	Brumfield_1	B	7	250181109	450017033	PstI	B07	Brumfield_1	B07	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72794.Huanuco.CarpaChavin	52b:D25GWACXX:5:250181109
+D25GWACXX	5	GCGTACAAT	53	Brumfield_1	C	7	250181110	450017033	PstI	C07	Brumfield_1	C07	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72795.Huanuco.CarpaChavin	53:D25GWACXX:5:250181110
+D25GWACXX	5	ACGCGCG	54b	Brumfield_1	D	7	250181111	450017033	PstI	D07	Brumfield_1	D07	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72796.Huanuco.CarpaChavin	54b:D25GWACXX:5:250181111
+D25GWACXX	5	GTCGCCT	55b	Brumfield_1	E	7	250181112	450017033	PstI	E07	Brumfield_1	E07	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72797.Huanuco.CarpaChavin	55b:D25GWACXX:5:250181112
+D25GWACXX	5	AATAACCAA	56b	Brumfield_1	F	7	250181113	450017033	PstI	F07	Brumfield_1	F07	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72798.Huanuco.CarpaChavin	56b:D25GWACXX:5:250181113
+D25GWACXX	5	AATGAACGA	57b	Brumfield_1	G	7	250181114	450017033	PstI	G07	Brumfield_1	G07	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72799.Huanuco.CarpaChavin	57b:D25GWACXX:5:250181114
+D25GWACXX	5	CGTCGCCACT	58	Brumfield_1	H	7	250181115	450017033	PstI	H07	Brumfield_1	H07	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72800.Huanuco.CarpaChavin	58:D25GWACXX:5:250181115
+D25GWACXX	5	ATGGCAA	59	Brumfield_1	A	8	250181116	450017033	PstI	A08	Brumfield_1	A08	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72801.Huanuco.CarpaChavin	59:D25GWACXX:5:250181116
+D25GWACXX	5	GAAGCA	60	Brumfield_1	B	8	250181117	450017033	PstI	B08	Brumfield_1	B08	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72802.Huanuco.CarpaChavin	60:D25GWACXX:5:250181117
+D25GWACXX	5	AACGTGCCT	61	Brumfield_1	C	8	250181118	450017033	PstI	C08	Brumfield_1	C08	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72803.Huanuco.CarpaChavin	61:D25GWACXX:5:250181118
+D25GWACXX	5	CCTCG	62	Brumfield_1	D	8	250181119	450017033	PstI	D08	Brumfield_1	D08	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72804.Huanuco.CarpaChavin	62:D25GWACXX:5:250181119
+D25GWACXX	5	CTCAT	63	Brumfield_1	E	8	250181120	450017033	PstI	E08	Brumfield_1	E08	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72805.Huanuco.CarpaChavin	63:D25GWACXX:5:250181120
+D25GWACXX	5	ACGGTACT	64b	Brumfield_1	F	8	250181121	450017033	PstI	F08	Brumfield_1	F08	Cranioleuca	antisiensis	NA	Macate	cra.ant.72806.Ancash.Macate	64b:D25GWACXX:5:250181121
+D25GWACXX	5	GCGCCG	65	Brumfield_1	G	8	250181122	450017033	PstI	G08	Brumfield_1	G08	Cranioleuca	antisiensis	NA	Macate	cra.ant.72807.Ancash.Macate	65:D25GWACXX:5:250181122
+D25GWACXX	5	CAAGT	66	Brumfield_1	H	8	250181123	450017033	PstI	H08	Brumfield_1	H08	Cranioleuca	antisiensis	NA	Macate	cra.ant.72808.Ancash.Macate	66:D25GWACXX:5:250181123
+D25GWACXX	5	TCCGAG	67b	Brumfield_1	A	9	250181124	450017033	PstI	A09	Brumfield_1	A09	Cranioleuca	antisiensis	NA	Macate	cra.ant.72809.Ancash.Macate	67b:D25GWACXX:5:250181124
+D25GWACXX	5	TAGATGA	68	Brumfield_1	B	9	250181125	450017033	PstI	B09	Brumfield_1	B09	Cranioleuca	antisiensis	NA	Macate	cra.ant.72810.Ancash.Macate	68:D25GWACXX:5:250181125
+D25GWACXX	5	TGGCCAG	69	Brumfield_1	C	9	250181126	450017033	PstI	C09	Brumfield_1	C09	Cranioleuca	antisiensis	NA	Macate	cra.ant.72811.Ancash.Macate	69:D25GWACXX:5:250181126
+D25GWACXX	5	GCACGAT	70b	Brumfield_1	D	9	250181127	450017033	PstI	D09	Brumfield_1	D09	Cranioleuca	antisiensis	NA	Macate	cra.ant.72812.Ancash.Macate	70b:D25GWACXX:5:250181127
+D25GWACXX	5	TTGCTG	71	Brumfield_1	E	9	250181128	450017033	PstI	E09	Brumfield_1	E09	Cranioleuca	antisiensis	NA	Macate	cra.ant.72813.Ancash.Macate	71:D25GWACXX:5:250181128
+D25GWACXX	5	CGCAACCAGT	72b	Brumfield_1	F	9	250181129	450017033	PstI	F09	Brumfield_1	F09	Cranioleuca	antisiensis	NA	Macate	cra.ant.72814.Ancash.Macate	72b:D25GWACXX:5:250181129
+D25GWACXX	5	TCACTG	73	Brumfield_1	G	9	250181130	450017033	PstI	G09	Brumfield_1	G09	Cranioleuca	antisiensis	NA	Macate	cra.ant.72815.Ancash.Macate	73:D25GWACXX:5:250181130
+D25GWACXX	5	ACAGT	74	Brumfield_1	H	9	250181131	450017033	PstI	H09	Brumfield_1	H09	Cranioleuca	antisiensis	NA	Suyubamba	cra.ant.72816.La Libertad.Suyubamba	74:D25GWACXX:5:250181131
+D25GWACXX	5	GGAGTCAAG	75b	Brumfield_1	A	10	250181132	450017033	PstI	A10	Brumfield_1	A10	Cranioleuca	antisiensis	NA	Suyubamba	cra.ant.72817.La Libertad.Suyubamba	75b:D25GWACXX:5:250181132
+D25GWACXX	5	TGAAT	76a	Brumfield_1	B	10	250181133	450017033	PstI	B10	Brumfield_1	B10	Cranioleuca	antisiensis	NA	Suyubamba	cra.ant.72818.La Libertad.Suyubamba	76a:D25GWACXX:5:250181133
+D25GWACXX	5	CATAT	77a	Brumfield_1	C	10	250181134	450017033	PstI	C10	Brumfield_1	C10	Cranioleuca	antisiensis	NA	Suyubamba	cra.ant.72819.La Libertad.Suyubamba	77a:D25GWACXX:5:250181134
+D25GWACXX	5	GTGACACAT	78	Brumfield_1	D	10	250181135	450017033	PstI	D10	Brumfield_1	D10	Cranioleuca	antisiensis	NA	Suyubamba	cra.ant.72820.La Libertad.Suyubamba	78:D25GWACXX:5:250181135
+D25GWACXX	5	TATGT	79a	Brumfield_1	E	10	250181136	450017033	PstI	E10	Brumfield_1	E10	Cranioleuca	antisiensis	NA	Suyubamba	cra.ant.72821.La Libertad.Suyubamba	79a:D25GWACXX:5:250181136
+D25GWACXX	5	CAGTGCCATT	80	Brumfield_1	F	10	250181137	450017033	PstI	F10	Brumfield_1	F10	Cranioleuca	antisiensis	NA	Suyubamba	cra.ant.72822.La Libertad.Suyubamba	80:D25GWACXX:5:250181137
+D25GWACXX	5	ACAACCAACT	81a	Brumfield_1	G	10	250181138	450017033	PstI	G10	Brumfield_1	G10	Cranioleuca	antisiensis	NA	Suyubamba	cra.ant.72823.La Libertad.Suyubamba	81a:D25GWACXX:5:250181138
+D25GWACXX	5	TGCAGA	82	Brumfield_1	H	10	250181139	450017033	PstI	H10	Brumfield_1	H10	Cranioleuca	antisiensis	NA	Suyubamba	cra.ant.72824.La Libertad.Suyubamba	82:D25GWACXX:5:250181139
+D25GWACXX	5	CATCTGCCG	83a	Brumfield_1	A	11	250181140	450017033	PstI	A11	Brumfield_1	A11	Cranioleuca	antisiensis	NA	Suyubamba	cra.ant.72825.La Libertad.Suyubamba	83a:D25GWACXX:5:250181140
+D25GWACXX	5	GGACAG	84a	Brumfield_1	B	11	250181141	450017033	PstI	B11	Brumfield_1	B11	Cranioleuca	antisiensis	NA	Suyubamba	cra.ant.72826.La Libertad.Suyubamba	84a:D25GWACXX:5:250181141
+D25GWACXX	5	ATCTGT	85	Brumfield_1	C	11	250181142	450017033	PstI	C11	Brumfield_1	C11	Cranioleuca	antisiensis	NA	ElMolino	cra.ant.72827.La Libertad.ElMolino	85:D25GWACXX:5:250181142
+D25GWACXX	5	AAGACGCT	86	Brumfield_1	D	11	250181143	450017033	PstI	D11	Brumfield_1	D11	Cranioleuca	antisiensis	NA	ElMolino	cra.ant.72828.La Libertad.ElMolino	86:D25GWACXX:5:250181143
+D25GWACXX	5	GAATGCAATA	87	Brumfield_1	E	11	250181144	450017033	PstI	E11	Brumfield_1	E11	Cranioleuca	antisiensis	NA	ElMolino	cra.ant.72829.La Libertad.ElMolino	87:D25GWACXX:5:250181144
+D25GWACXX	5	TAGCAG	88	Brumfield_1	F	11	250181145	450017033	PstI	F11	Brumfield_1	F11	Cranioleuca	antisiensis	NA	ElMolino	cra.ant.72830.La Libertad.ElMolino	88:D25GWACXX:5:250181145
+D25GWACXX	5	ATCCG	89	Brumfield_1	G	11	250181146	450017033	PstI	G11	Brumfield_1	G11	Cranioleuca	antisiensis	NA	ElMolino	cra.ant.72831.La Libertad.ElMolino	89:D25GWACXX:5:250181146
+D25GWACXX	5	CTTAG	90	Brumfield_1	H	11	250181147	450017033	PstI	H11	Brumfield_1	H11	Cranioleuca	antisiensis	NA	ElMolino	cra.ant.72832.La Libertad.ElMolino	90:D25GWACXX:5:250181147
+D25GWACXX	5	TTATTACAT	91	Brumfield_1	A	12	250181148	450017033	PstI	A12	Brumfield_1	A12	Cranioleuca	antisiensis	NA	ElMolino	cra.ant.72833.La Libertad.ElMolino	91:D25GWACXX:5:250181148
+D25GWACXX	5	GCCAACAAGA	92	Brumfield_1	B	12	250181149	450017033	PstI	B12	Brumfield_1	B12	Cranioleuca	antisiensis	NA	ElMolino	cra.ant.72834.La Libertad.ElMolino	92:D25GWACXX:5:250181149
+D25GWACXX	5	TGCCGCAT	93a	Brumfield_1	C	12	250181150	450017033	PstI	C12	Brumfield_1	C12	Cranioleuca	antisiensis	NA	ElMolino	cra.ant.72835.La Libertad.ElMolino	93a:D25GWACXX:5:250181150
+D25GWACXX	5	CGTGTCA	94a	Brumfield_1	D	12	250181151	450017033	PstI	D12	Brumfield_1	D12	Cranioleuca	antisiensis	NA	ElMolino	cra.ant.72836.La Libertad.ElMolino	94a:D25GWACXX:5:250181151
+D25GWACXX	5	CAACCACACA	95	Brumfield_1	E	12	250181152	450017033	PstI	E12	Brumfield_1	E12	Cranioleuca	antisiensis	NA	Contumaza	cra.ant.72837.Cajamarca.Contumaza	95:D25GWACXX:5:250181152
+D25GWACXX	5	GCTCCGA	96	Brumfield_1	F	12	250181153	450017033	PstI	F12	Brumfield_1	F12	Cranioleuca	antisiensis	NA	Contumaza	cra.ant.72838.Cajamarca.Contumaza	96:D25GWACXX:5:250181153
+D25GWACXX	5	TCAGAGAT	97	Brumfield_1	G	12	250181154	450017033	PstI	G12	Brumfield_1	G12	Cranioleuca	antisiensis	NA	Contumaza	cra.ant.72839.Cajamarca.Contumaza	97:D25GWACXX:5:250181154
+D25GWACXX	5	CGTTCA	98	Brumfield_1	H	12	250181155	450017033	PstI	H12	Brumfield_1	H12	Cranioleuca	antisiensis	NA	Contumaza	cra.ant.72840.Cajamarca.Contumaza	98:D25GWACXX:5:250181155
+D25GWACXX	6	TGACGCCA	99a	Brumfield_2	A	1	250181187	450017034	PstI	A01	Brumfield_2	A01	Cranioleuca	antisiensis	NA	Contumaza	cra.ant.72841.Cajamarca.Contumaza	99a:D25GWACXX:6:250181187
+D25GWACXX	6	CAGATA	100	Brumfield_2	B	1	250181188	450017034	PstI	B01	Brumfield_2	B01	Cranioleuca	antisiensis	NA	Celendin	cra.ant.72842.Cajamarca.Celendin	100:D25GWACXX:6:250181188
+D25GWACXX	6	GAAGTG	101	Brumfield_2	C	1	250181189	450017034	PstI	C01	Brumfield_2	C01	Cranioleuca	antisiensis	NA	Celendin	cra.ant.72843.Cajamarca.Celendin	101:D25GWACXX:6:250181189
+D25GWACXX	6	TAGCGGAT	102	Brumfield_2	D	1	250181190	450017034	PstI	D01	Brumfield_2	D01	Cranioleuca	antisiensis	NA	Celendin	cra.ant.72844.Cajamarca.Celendin	102:D25GWACXX:6:250181190
+D25GWACXX	6	TATTCGCAT	103	Brumfield_2	E	1	250181191	450017034	PstI	E01	Brumfield_2	E01	Cranioleuca	antisiensis	NA	Celendin	cra.ant.72845.Cajamarca.Celendin	103:D25GWACXX:6:250181191
+D25GWACXX	6	ATAGAT	104a	Brumfield_2	F	1	250181192	450017034	PstI	F01	Brumfield_2	F01	Cranioleuca	antisiensis	NA	Celendin	cra.ant.72846.Cajamarca.Celendin	104a:D25GWACXX:6:250181192
+D25GWACXX	6	CCGAACA	105	Brumfield_2	G	1	250181193	450017034	PstI	G01	Brumfield_2	G01	Cranioleuca	antisiensis	NA	Celendin	cra.ant.72847.Cajamarca.Celendin	105:D25GWACXX:6:250181193
+D25GWACXX	6	GGAAGACAT	106a	Brumfield_2	H	1	250181194	450017034	PstI	H01	Brumfield_2	H01	Cranioleuca	antisiensis	NA	Celendin	cra.ant.72848.Cajamarca.Celendin	106a:D25GWACXX:6:250181194
+D25GWACXX	6	GGCTTA	107	Brumfield_2	A	2	250181195	450017034	PstI	A02	Brumfield_2	A02	Cranioleuca	antisiensis	NA	Celendin	cra.ant.72849.Cajamarca.Celendin	107:D25GWACXX:6:250181195
+D25GWACXX	6	AACGCACATT	108	Brumfield_2	B	2	250181196	450017034	PstI	B02	Brumfield_2	B02	Cranioleuca	antisiensis	NA	Celendin	cra.ant.72850.Cajamarca.Celendin	108:D25GWACXX:6:250181196
+D25GWACXX	6	GAGCGACAT	109a	Brumfield_2	C	2	250181197	450017034	PstI	C02	Brumfield_2	C02	Cranioleuca	antisiensis	NA	Celendin	cra.ant.72851.Cajamarca.Celendin	109a:D25GWACXX:6:250181197
+D25GWACXX	6	CCTTGCCATT	110	Brumfield_2	D	2	250181198	450017034	PstI	D02	Brumfield_2	D02	Cranioleuca	antisiensis	NA	Duraznopampa	cra.ant.72852.Amazonas.Duraznopampa	110:D25GWACXX:6:250181198
+D25GWACXX	6	GGTATA	111a	Brumfield_2	E	2	250181199	450017034	PstI	E02	Brumfield_2	E02	Cranioleuca	antisiensis	NA	Duraznopampa	cra.ant.72853.Amazonas.Duraznopampa	111a:D25GWACXX:6:250181199
+D25GWACXX	6	TCTTGG	112	Brumfield_2	F	2	250181200	450017034	PstI	F02	Brumfield_2	F02	Cranioleuca	antisiensis	NA	Duraznopampa	cra.ant.72854.Amazonas.Duraznopampa	112:D25GWACXX:6:250181200
+D25GWACXX	6	GGTGT	113	Brumfield_2	G	2	250181201	450017034	PstI	G02	Brumfield_2	G02	Cranioleuca	antisiensis	NA	Duraznopampa	cra.ant.72855.Amazonas.Duraznopampa	113:D25GWACXX:6:250181201
+D25GWACXX	6	GGATA	114	Brumfield_2	H	2	250181202	450017034	PstI	H02	Brumfield_2	H02	Cranioleuca	antisiensis	NA	Duraznopampa	cra.ant.72856.Amazonas.Duraznopampa	114:D25GWACXX:6:250181202
+D25GWACXX	6	CTAAGCA	115	Brumfield_2	A	3	250181203	450017034	PstI	A03	Brumfield_2	A03	Cranioleuca	antisiensis	NA	Duraznopampa	cra.ant.72857.Amazonas.Duraznopampa	115:D25GWACXX:6:250181203
+D25GWACXX	6	ATTAT	116	Brumfield_2	B	3	250181204	450017034	PstI	B03	Brumfield_2	B03	Cranioleuca	antisiensis	NA	Duraznopampa	cra.ant.72858.Amazonas.Duraznopampa	116:D25GWACXX:6:250181204
+D25GWACXX	6	GCGCTCA	117	Brumfield_2	C	3	250181205	450017034	PstI	C03	Brumfield_2	C03	Cranioleuca	antisiensis	NA	Duraznopampa	cra.ant.72859.Amazonas.Duraznopampa	117:D25GWACXX:6:250181205
+D25GWACXX	6	ACTGCGAT	118	Brumfield_2	D	3	250181206	450017034	PstI	D03	Brumfield_2	D03	Cranioleuca	antisiensis	NA	Duraznopampa	cra.ant.72860.Amazonas.Duraznopampa	118:D25GWACXX:6:250181206
+D25GWACXX	6	TTCGTT	119a	Brumfield_2	E	3	250181207	450017034	PstI	E03	Brumfield_2	E03	Cranioleuca	antisiensis	NA	Duraznopampa	cra.ant.72861.Amazonas.Duraznopampa	119a:D25GWACXX:6:250181207
+D25GWACXX	6	ATATAA	120	Brumfield_2	F	3	250181208	450017034	PstI	F03	Brumfield_2	F03	Cranioleuca	antisiensis	NA	Porculla	cra.ant.72862.Piura.Landirca	120:D25GWACXX:6:250181208
+D25GWACXX	6	TGGCAACAGA	121	Brumfield_2	G	3	250181209	450017034	PstI	G03	Brumfield_2	G03	Cranioleuca	antisiensis	NA	Porculla	cra.ant.72863.Piura.Landirca	121:D25GWACXX:6:250181209
+D25GWACXX	6	CTCGTCG	122	Brumfield_2	H	3	250181210	450017034	PstI	H03	Brumfield_2	H03	Cranioleuca	antisiensis	NA	Porculla	cra.ant.72864.Piura.Landirca	122:D25GWACXX:6:250181210
+D25GWACXX	6	GCCTACCT	123	Brumfield_2	A	4	250181211	450017034	PstI	A04	Brumfield_2	A04	Cranioleuca	antisiensis	NA	Porculla	cra.ant.72865.Piura.Landirca	123:D25GWACXX:6:250181211
+D25GWACXX	6	CACCA	124	Brumfield_2	B	4	250181212	450017034	PstI	B04	Brumfield_2	B04	Cranioleuca	antisiensis	NA	Porculla	cra.ant.72866.Piura.Landirca	124:D25GWACXX:6:250181212
+D25GWACXX	6	AATTAG	125	Brumfield_2	C	4	250181213	450017034	PstI	C04	Brumfield_2	C04	Cranioleuca	antisiensis	NA	Porculla	cra.ant.72867.Piura.Landirca	125:D25GWACXX:6:250181213
+D25GWACXX	6	GGAACGA	126	Brumfield_2	D	4	250181214	450017034	PstI	D04	Brumfield_2	D04	Cranioleuca	antisiensis	NA	Porculla	cra.ant.72868.Piura.Landirca	126:D25GWACXX:6:250181214
+D25GWACXX	6	ACAACT	127a	Brumfield_2	E	4	250181215	450017034	PstI	E04	Brumfield_2	E04	Cranioleuca	antisiensis	NA	Porculla	cra.ant.72869.Piura.Landirca	127a:D25GWACXX:6:250181215
+D25GWACXX	6	ACTGCT	128	Brumfield_2	F	4	250181216	450017034	PstI	F04	Brumfield_2	F04	Cranioleuca	antisiensis	NA	Porculla	cra.ant.72870.Piura.Landirca	128:D25GWACXX:6:250181216
+D25GWACXX	6	TGGCACAGA	129	Brumfield_2	H	4	250181218	450017034	PstI	H04	Brumfield_2	H04	Cranioleuca	antisiensis	NA	Porculla	cra.ant.72871.Piura.Landirca	129:D25GWACXX:6:250181218
+D25GWACXX	6	TGCTT	130	Brumfield_2	A	5	250181219	450017034	PstI	A05	Brumfield_2	A05	Cranioleuca	antisiensis	NA	Porculla	cra.ant.72872.Piura.Landirca	130:D25GWACXX:6:250181219
+D25GWACXX	6	GCAAGCCAT	131	Brumfield_2	B	5	250181220	450017034	PstI	B05	Brumfield_2	B05	Cranioleuca	antisiensis	NA	Canchaque	cra.ant.72873.Piura.Canchaque	131:D25GWACXX:6:250181220
+D25GWACXX	6	CGCACCAATT	132	Brumfield_2	C	5	250181221	450017034	PstI	C05	Brumfield_2	C05	Cranioleuca	antisiensis	NA	Canchaque	cra.ant.72874.Piura.Canchaque	132:D25GWACXX:6:250181221
+D25GWACXX	6	CTCGCGG	133	Brumfield_2	D	5	250181222	450017034	PstI	D05	Brumfield_2	D05	Cranioleuca	antisiensis	NA	Canchaque	cra.ant.72875.Piura.Canchaque	133:D25GWACXX:6:250181222
+D25GWACXX	6	AACTGG	134	Brumfield_2	E	5	250181223	450017034	PstI	E05	Brumfield_2	E05	Cranioleuca	antisiensis	NA	Canchaque	cra.ant.72876.Piura.Canchaque	134:D25GWACXX:6:250181223
+D25GWACXX	6	ATGAGCAA	135	Brumfield_2	F	5	250181224	450017034	PstI	F05	Brumfield_2	F05	Cranioleuca	antisiensis	NA	Canchaque	cra.ant.72877.Piura.Canchaque	135:D25GWACXX:6:250181224
+D25GWACXX	6	CTTGA	136	Brumfield_2	G	5	250181225	450017034	PstI	G05	Brumfield_2	G05	Cranioleuca	antisiensis	NA	Canchaque	cra.ant.72878.Piura.Canchaque	136:D25GWACXX:6:250181225
+D25GWACXX	6	GCGTCCT	137b	Brumfield_2	H	5	250181226	450017034	PstI	H05	Brumfield_2	H05	Cranioleuca	antisiensis	NA	Llama	cra.ant.72879.Cajamarca.Llama	137b:D25GWACXX:6:250181226
+D25GWACXX	6	ACCAGGA	138	Brumfield_2	A	6	250181227	450017034	PstI	A06	Brumfield_2	A06	Cranioleuca	antisiensis	NA	Llama	cra.ant.72880.Cajamarca.Llama	138:D25GWACXX:6:250181227
+D25GWACXX	6	CCACTCA	139	Brumfield_2	B	6	250181228	450017034	PstI	B06	Brumfield_2	B06	Cranioleuca	antisiensis	NA	Llama	cra.ant.72881.Cajamarca.Llama	139:D25GWACXX:6:250181228
+D25GWACXX	6	TCACGGAAG	140	Brumfield_2	C	6	250181229	450017034	PstI	C06	Brumfield_2	C06	Cranioleuca	antisiensis	NA	Llama	cra.ant.72882.Cajamarca.Llama	140:D25GWACXX:6:250181229
+D25GWACXX	6	TATCA	141	Brumfield_2	D	6	250181230	450017034	PstI	D06	Brumfield_2	D06	Cranioleuca	antisiensis	NA	Llama	cra.ant.72883.Cajamarca.Llama	141:D25GWACXX:6:250181230
+D25GWACXX	6	TAGCCAA	142	Brumfield_2	E	6	250181231	450017034	PstI	E06	Brumfield_2	E06	Cranioleuca	antisiensis	NA	Llama	cra.ant.72884.Cajamarca.Llama	142:D25GWACXX:6:250181231
+D25GWACXX	6	ATATCGCCA	143	Brumfield_2	F	6	250181232	450017034	PstI	F06	Brumfield_2	F06	Cranioleuca	antisiensis	NA	Llama	cra.ant.72885.Cajamarca.Llama	143:D25GWACXX:6:250181232
+D25GWACXX	6	CTCTA	144	Brumfield_2	G	6	250181233	450017034	PstI	G06	Brumfield_2	G06	Cranioleuca	antisiensis	NA	Llama	cra.ant.72886.Cajamarca.Llama	144:D25GWACXX:6:250181233
+D25GWACXX	6	GGTGCACATT	145a	Brumfield_2	H	6	250181234	450017034	PstI	H06	Brumfield_2	H06	Cranioleuca	antisiensis	NA	Llama	cra.ant.72887.Cajamarca.Llama	145a:D25GWACXX:6:250181234
+D25GWACXX	6	CTCTCGCAT	146a	Brumfield_2	A	7	250181235	450017034	PstI	A07	Brumfield_2	A07	Cranioleuca	antisiensis	NA	Huamatanga	cra.ant.72889.Lima.Huamatanga	146a:D25GWACXX:6:250181235
+D25GWACXX	6	CAGAGGT	147	Brumfield_2	B	7	250181236	450017034	PstI	B07	Brumfield_2	B07	Cranioleuca	antisiensis	NA	Huamatanga	cra.ant.72890.Lima.Huamatanga	147:D25GWACXX:6:250181236
+D25GWACXX	6	GCGTACAAT	148	Brumfield_2	C	7	250181237	450017034	PstI	C07	Brumfield_2	C07	Cranioleuca	antisiensis	NA	Huamatanga	cra.ant.72891.Lima.Huamatanga	148:D25GWACXX:6:250181237
+D25GWACXX	6	ACGCGCG	149	Brumfield_2	D	7	250181238	450017034	PstI	D07	Brumfield_2	D07	Cranioleuca	antisiensis	NA	Huamatanga	cra.ant.72892.Lima.Huamatanga	149:D25GWACXX:6:250181238
+D25GWACXX	6	GTCGCCT	150	Brumfield_2	E	7	250181239	450017034	PstI	E07	Brumfield_2	E07	Cranioleuca	antisiensis	NA	Chinchan	cra.ant.72893.Ancash.Chinchan	150:D25GWACXX:6:250181239
+D25GWACXX	6	AATAACCAA	151	Brumfield_2	F	7	250181240	450017034	PstI	F07	Brumfield_2	F07	Cranioleuca	antisiensis	NA	Chinchan	cra.ant.72894.Ancash.Chinchan	151:D25GWACXX:6:250181240
+D25GWACXX	6	AATGAACGA	152	Brumfield_2	G	7	250181241	450017034	PstI	G07	Brumfield_2	G07	Cranioleuca	antisiensis	NA	Chinchan	cra.ant.72895.Ancash.Chinchan	152:D25GWACXX:6:250181241
+D25GWACXX	6	CGTCGCCACT	153	Brumfield_2	H	7	250181242	450017034	PstI	H07	Brumfield_2	H07	Cranioleuca	antisiensis	NA	Chinchan	cra.ant.72896.Ancash.Chinchan	153:D25GWACXX:6:250181242
+D25GWACXX	6	ATGGCAA	154	Brumfield_2	A	8	250181243	450017034	PstI	A08	Brumfield_2	A08	Cranioleuca	antisiensis	NA	Chinchan	cra.ant.72897.Ancash.Chinchan	154:D25GWACXX:6:250181243
+D25GWACXX	6	GAAGCA	155	Brumfield_2	B	8	250181244	450017034	PstI	B08	Brumfield_2	B08	Cranioleuca	antisiensis	NA	Chinchan	cra.ant.72898.Ancash.Chinchan	155:D25GWACXX:6:250181244
+D25GWACXX	6	AACGTGCCT	156	Brumfield_2	C	8	250181245	450017034	PstI	C08	Brumfield_2	C08	Cranioleuca	antisiensis	NA	Chinchan	cra.ant.72899.Ancash.Chinchan	156:D25GWACXX:6:250181245
+D25GWACXX	6	CCTCG	157	Brumfield_2	D	8	250181246	450017034	PstI	D08	Brumfield_2	D08	Cranioleuca	antisiensis	NA	Chinchan	cra.ant.72900.Ancash.Chinchan	157:D25GWACXX:6:250181246
+D25GWACXX	6	CTCAT	158	Brumfield_2	E	8	250181247	450017034	PstI	E08	Brumfield_2	E08	Cranioleuca	antisiensis	NA	Chinchan	cra.ant.72901.Ancash.Chinchan	158:D25GWACXX:6:250181247
+D25GWACXX	6	ACGGTACT	159	Brumfield_2	F	8	250181248	450017034	PstI	F08	Brumfield_2	F08	Cranioleuca	antisiensis	NA	Chinchan	cra.ant.72902.Ancash.Chinchan	159:D25GWACXX:6:250181248
+D25GWACXX	6	GCGCCG	160a	Brumfield_2	G	8	250181249	450017034	PstI	G08	Brumfield_2	G08	Cranioleuca	antisiensis	NA	Chinchan	cra.ant.72903.Ancash.Chinchan	160a:D25GWACXX:6:250181249
+D25GWACXX	6	CAAGT	161a	Brumfield_2	H	8	250181250	450017034	PstI	H08	Brumfield_2	H08	Cranioleuca	antisiensis	NA	Pacar	cra.ant.72904.Ancash.Pacar	161a:D25GWACXX:6:250181250
+D25GWACXX	6	TCCGAG	162	Brumfield_2	A	9	250181251	450017034	PstI	A09	Brumfield_2	A09	Cranioleuca	antisiensis	NA	Pacar	cra.ant.72905.Ancash.Pacar	162:D25GWACXX:6:250181251
+D25GWACXX	6	TAGATGA	163a	Brumfield_2	B	9	250181252	450017034	PstI	B09	Brumfield_2	B09	Cranioleuca	antisiensis	NA	Pacar	cra.ant.72906.Ancash.Pacar	163a:D25GWACXX:6:250181252
+D25GWACXX	6	TGGCCAG	164	Brumfield_2	C	9	250181253	450017034	PstI	C09	Brumfield_2	C09	Cranioleuca	antisiensis	NA	Pacar	cra.ant.72907.Ancash.Pacar	164:D25GWACXX:6:250181253
+D25GWACXX	6	GCACGAT	165	Brumfield_2	D	9	250181254	450017034	PstI	D09	Brumfield_2	D09	Cranioleuca	antisiensis	NA	Pacar	cra.ant.72908.Ancash.Pacar	165:D25GWACXX:6:250181254
+D25GWACXX	6	TTGCTG	166	Brumfield_2	E	9	250181255	450017034	PstI	E09	Brumfield_2	E09	Cranioleuca	antisiensis	NA	Pacar	cra.ant.72909.Ancash.Pacar	166:D25GWACXX:6:250181255
+D25GWACXX	6	CGCAACCAGT	167	Brumfield_2	F	9	250181256	450017034	PstI	F09	Brumfield_2	F09	Cranioleuca	antisiensis	NA	Pacar	cra.ant.72910.Ancash.Pacar	167:D25GWACXX:6:250181256
+D25GWACXX	6	TCACTG	168	Brumfield_2	G	9	250181257	450017034	PstI	G09	Brumfield_2	G09	Cranioleuca	antisiensis	NA	Pacar	cra.ant.72911.Ancash.Pacar	168:D25GWACXX:6:250181257
+D25GWACXX	6	ACAGT	169a	Brumfield_2	H	9	250181258	450017034	PstI	H09	Brumfield_2	H09	Cranioleuca	antisiensis	NA	Pacar	cra.ant.72912.Ancash.Pacar	169a:D25GWACXX:6:250181258
+D25GWACXX	6	GGAGTCAAG	170	Brumfield_2	A	10	250181259	450017034	PstI	A10	Brumfield_2	A10	Cranioleuca	antisiensis	NA	Quichas	cra.ant.FMNH_391884	170:D25GWACXX:6:250181259
+D25GWACXX	6	TGAAT	171	Brumfield_2	B	10	250181260	450017034	PstI	B10	Brumfield_2	B10	Cranioleuca	antisiensis	NA	Quichas	cra.ant.FMNH_391885	171:D25GWACXX:6:250181260
+D25GWACXX	6	CATAT	173	Brumfield_2	C	10	250181261	450017034	PstI	C10	Brumfield_2	C10	Cranioleuca	antisiensis	NA	Quichas	cra.ant.FMNH_391887	173:D25GWACXX:6:250181261
+D25GWACXX	6	GTGACACAT	174	Brumfield_2	D	10	250181262	450017034	PstI	D10	Brumfield_2	D10	Cranioleuca	antisiensis	NA	Morococha	cra.ant.FMNH_391888	174:D25GWACXX:6:250181262
+D25GWACXX	6	TATGT	175	Brumfield_2	E	10	250181263	450017034	PstI	E10	Brumfield_2	E10	Cranioleuca	antisiensis	NA	Morococha	cra.ant.FMNH_391889	175:D25GWACXX:6:250181263
+D25GWACXX	6	CAGTGCCATT	176	Brumfield_2	F	10	250181264	450017034	PstI	F10	Brumfield_2	F10	Cranioleuca	antisiensis	NA	Carhuaz	cra.ant.FMNH_391890	176:D25GWACXX:6:250181264
+D25GWACXX	6	ACAACCAACT	177	Brumfield_2	G	10	250181265	450017034	PstI	G10	Brumfield_2	G10	Cranioleuca	antisiensis	NA	Quichas	cra.ant.FMNH_391891	177:D25GWACXX:6:250181265
+D25GWACXX	6	TGCAGA	178	Brumfield_2	H	10	250181266	450017034	PstI	H10	Brumfield_2	H10	Cranioleuca	antisiensis	NA	curtata	cra.cur.B43876	178:D25GWACXX:6:250181266
+D25GWACXX	6	CATCTGCCG	181	Brumfield_2	A	11	250181267	450017034	PstI	A11	Brumfield_2	A11	Cranioleuca	antisiensis	NA	curtata	cra.cur.B8175	181:D25GWACXX:6:250181267
+D25GWACXX	6	GGACAG	183	Brumfield_2	B	11	250181268	450017034	PstI	B11	Brumfield_2	B11	Cranioleuca	antisiensis	NA	curtata	cra.cur.B6032	183:D25GWACXX:6:250181268
+D25GWACXX	6	ATCTGT	187	Brumfield_2	C	11	250181269	450017034	PstI	C11	Brumfield_2	C11	Cranioleuca	antisiensis	NA	Porculla	cra.ant.B31683	187:D25GWACXX:6:250181269
+D25GWACXX	6	AAGACGCT	188	Brumfield_2	D	11	250181270	450017034	PstI	D11	Brumfield_2	D11	Cranioleuca	antisiensis	NA	Porculla	cra.ant.B31685	188:D25GWACXX:6:250181270
+D25GWACXX	6	GAATGCAATA	10nm	Brumfield_2	E	11	250181271	450017034	PstI	E11	Brumfield_2	E11	Cranioleuca	antisiensis	NA	Macate	NK_173870	10nm:D25GWACXX:6:250181271
+D25GWACXX	6	TAGCAG	11nm	Brumfield_2	F	11	250181272	450017034	PstI	F11	Brumfield_2	F11	Cranioleuca	antisiensis	NA	Chinchan	NK_173896	11nm:D25GWACXX:6:250181272
+D25GWACXX	6	ATCCG	1nm	Brumfield_2	G	11	250181273	450017034	PstI	G11	Brumfield_2	G11	Cranioleuca	antisiensis	NA	Porculla	NK_169285	1nm:D25GWACXX:6:250181273
+D25GWACXX	6	CTTAG	2nm	Brumfield_2	H	11	250181274	450017034	PstI	H11	Brumfield_2	H11	Cranioleuca	antisiensis	NA	Macate	NK_171570	2nm:D25GWACXX:6:250181274
+D25GWACXX	6	TTATTACAT	3nm	Brumfield_2	A	12	250181275	450017034	PstI	A12	Brumfield_2	A12	Cranioleuca	antisiensis	NA	Carhuaz	NK_171689	3nm:D25GWACXX:6:250181275
+D25GWACXX	6	GCCAACAAGA	4nm	Brumfield_2	B	12	250181276	450017034	PstI	B12	Brumfield_2	B12	Cranioleuca	antisiensis	NA	Carhuaz	NK_171703	4nm:D25GWACXX:6:250181276
+D25GWACXX	6	TGCCGCAT	5nm	Brumfield_2	C	12	250181277	450017034	PstI	C12	Brumfield_2	C12	Cranioleuca	antisiensis	NA	Carhuaz	NK_171708	5nm:D25GWACXX:6:250181277
+D25GWACXX	6	CGTGTCA	6nm	Brumfield_2	D	12	250181278	450017034	PstI	D12	Brumfield_2	D12	Cranioleuca	antisiensis	NA	Carhuaz	NK_171709	6nm:D25GWACXX:6:250181278
+D25GWACXX	6	CAACCACACA	7nm	Brumfield_2	E	12	250181279	450017034	PstI	E12	Brumfield_2	E12	Cranioleuca	antisiensis	NA	Contumaza	NK_171957	7nm:D25GWACXX:6:250181279
+D25GWACXX	6	GCTCCGA	8nm	Brumfield_2	F	12	250181280	450017034	PstI	F12	Brumfield_2	F12	Cranioleuca	antisiensis	NA	Contumaza	NK_172033	8nm:D25GWACXX:6:250181280
+D25GWACXX	6	TCAGAGAT	9nm	Brumfield_2	G	12	250181281	450017034	PstI	G12	Brumfield_2	G12	Cranioleuca	antisiensis	NA	Contumaza	NK_172063	9nm:D25GWACXX:6:250181281
+D260TACXX	2	ATATCGCCA	60	Brumfield_6	F	6	250181740	450017038	PstI	F06	Brumfield_6	F06	Cranioleuca	antisiensis	NA	CarpaChavin	cra.ant.72802.Huanuco.CarpaChavin	60:D260TACXX:2:250181740
+D260TACXX	2	CTCTA	80	Brumfield_6	G	6	250181741	450017038	PstI	G06	Brumfield_6	G06	Cranioleuca	antisiensis	NA	Suyubamba	cra.ant.72822.La Libertad.Suyubamba	80:D260TACXX:2:250181741
+D260TACXX	2	GGTGCACATT	87	Brumfield_6	H	6	250181742	450017038	PstI	H06	Brumfield_6	H06	Cranioleuca	antisiensis	NA	ElMolino	cra.ant.72829.La Libertad.ElMolino	87:D260TACXX:2:250181742
+D260TACXX	2	CTCTCGCAT	130	Brumfield_6	A	7	250181743	450017038	PstI	A07	Brumfield_6	A07	Cranioleuca	antisiensis	NA	Porculla	cra.ant.72872.Piura.Landirca	130:D260TACXX:2:250181743

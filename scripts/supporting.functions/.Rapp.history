@@ -1,0 +1,573 @@
+require(adgenent)
+require(adegenet)
+#=============================================================================================================##
+# Script created by Glenn Seeholzer, contact at seeholzer.glenn@gmail.com#
+# Script created in version R 3.2.3 #
+# This script: runs univariate and multivariate matrix regressions testing for isolation-by-adaptation, #
+#			isolation-by-environment, and isolation-by-distance in Cranioleuca antisiensis. #
+#			Runs a commonality analysis assesing the relative important of these processes in shaping #
+#			genetic structure of C. antisiensis#
+# Usage notes: run line by line#
+#=============================================================================================================##
+library(plyr)#
+library(adegenet)#
+library(StAMPP)#
+library(gdistance)#
+#
+####	import phenotypic and meta-data#
+data = read.delim('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/Data.Table.txt',stringsAsFactors=F)#
+#
+####	import genetic data#
+gen = get(load('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/SNPdata/SNPdata.genind.Rdata'))#
+#
+####	specify the populations#
+tmp = data[data$ID %in% indNames(gen), ]#
+tmp = tmp[match(indNames(gen),tmp$ID), ]#
+strata(gen) = data.frame(pop = tmp[,'Population'])#
+setPop(gen) = ~pop#
+####	Calculate pairwise population global Fst matrix#
+####	because of minor variations in each run of stamppFst, it is advisable to upload the pairwise Fst matrix used in the original publication to ensure exact duplication of results presented in paper. #
+fst = read.delim('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/Fst.all.05outliersexcluded.txt')#
+#
+####	however an fst matrix almost identical to that above can be generated with the following commands #
+# outliers = readLines('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/BayEnv_outlier_loci.txt') #import list of outlier loci to exclude from analysis#
+# gen.new = gen[loc=!(locNames(gen) %in% outliers)] #remove outlier from genind object #
+# source('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/scripts/supporting.functions/genind2stampp.R', chdir = TRUE)#
+# gdata = genind2stampp(gen.new)#
+# set.seed(1234)#
+# fst = stamppFst(gdata,nboots=1) #this step will take a long time to run#
+#
+####	Clean Data#
+####	remove outgroups Cranioleuca curatata and Cranioleuca erythrops from all datasets#
+data = data[!(data$Population %in% c('erythrops','curtata')), ]#
+gen = gen[i = which(!grepl('cra.cur',indNames(gen)))]#
+fst = fst[rownames(fst) != 'curtata',colnames(fst) != 'curtata']#
+#
+####	Create final phenotypic data set#
+data = data[data$Population %in% rownames(fst.all) & data$ID %in% indNames(gen), ]#
+#
+#--------------------------------------------------------------------##
+#--------------------------------------------------------------------##
+#--------------------------------------------------------------------##
+#------------ Create raw population means for predictors ------------##
+#--------------------------------------------------------------------##
+#--------------------------------------------------------------------##
+#--------------------------------------------------------------------##
+#
+####	ENV #
+####	import bioclim and enviro rasters#
+files <- list.files(path="~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/bioclim.veg.layers", pattern='grd', full.names=TRUE)#
+BIOCLIM = stack(files[grep('bio\\d',files)]) #create raster stack of BIOCLIM rasters#
+envdata = data.frame(pop=data[,'Population'],as.data.frame(extract(BIOCLIM, data[,c('Longitude','Latitude')]))) #extract BIOCLIM data for each individual#
+tmp = aggregate(. ~ pop, data= envdata,mean,na.rm=T) #take mean for each locality#
+my.prc = prcomp(tmp[,-1], center=T, scale = T, na.omit=T) #do PCA#
+pc.values = predict(my.prc)[,1:ncol(tmp[,-1])]#
+pop.env.raw = data.frame(pc.values)#
+rownames(pop.env.raw) = tmp[,1]#
+#
+####	ALT #
+tmp = aggregate(. ~ Population, data= data[,c('Population','Bioclim.Elevation')],mean,na.rm=T)#
+pop.alt = as.matrix(tmp[,'Bioclim.Elevation'])#
+rownames(pop.alt) = tmp[,'Population']#
+pop.alt.raw = pop.alt[rownames(fst),] #put in same order as fst matrix#
+#
+####	MASS #
+####	remove juveniles and individuals without mass data#
+tmp = aggregate(. ~ Population, data= data[!is.na(data$Mass) & !(data$Age %in% c('j')),c('Population','Mass')],mean,na.rm=T) #
+pop.mass = as.matrix(tmp[,'Mass'])#
+rownames(pop.mass) = tmp[,'Population']#
+pop.mass.raw = pop.mass[rownames(fst),] #put in same order as dgen.fst.all#
+#
+####	SIZE (PC1.morphology)#
+####	remove juveniles and individuals without size data#
+tmp = aggregate(. ~ Population, data= data[!is.na(data$PC1.morphology) & !(data$Age %in% c('j')) , c('Population','PC1.morphology')],mean,na.rm=T)#
+pop.size = as.matrix(tmp[,'PC1.morphology'])#
+rownames(pop.size) = tmp[,'Population']#
+order = rownames(fst)[rownames(fst) %in% rownames(pop.size)] #missing populations without morphological measurment #
+pop.size.raw = pop.size[order,] #put in same order as fst#
+#
+####	PLUM (PC1.plumage)#
+tmp = aggregate(. ~ Population, data= data[,c('Population','PC1.plumage')],mean,na.rm=T)#
+pop.plumage = as.matrix(tmp[,'PC1.plumage'])#
+rownames(pop.plumage) = tmp[,'Population']#
+order = rownames(fst)[rownames(fst) %in% rownames(pop.plumage)]#
+pop.plumage.raw = pop.plumage[order,] #put in same order as dgen.fst.all#
+####	DISPERSAL DISTANCE MATRICES#
+####	This section of the script takes a long to run. I recommended jumping past the commented-out code and loading the distances matrices from the text files in the working directory. If you would like to run the text below, un-comment each line and run it.#
+####	Shortcut for R Console on Mac: Highlight the entire section and press Command+Option+' to remove comments from a large block of text#
+# #Since Amotape is completely isolated in all MAXENT models, change it's locality to the nearest locality for niche models inside the core andean distribution. and compute the least cost paths. Add the linear distance to Amotape from this locality to all the other pairwise distances#
+# Amotape = pop.loc['Amotape',]#
+# Celica = c(-79.987583,-4.092195) #Celica#
+# pop.loc2 = pop.loc#
+# pop.loc2['Amotape',] = Celica#
+# dist.Amotape.Celica = spDists(rbind(Amotape,Celica),longlat=TRUE)[2,1]#
+#
+# ####RAW MAXENT output#
+# r = raster('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/SDM/MAXENT_SDM_raw.asc')#
+# rnew = r#
+# tr = transition(rnew,mean,directions=16)#
+# trC = geoCorrection(tr,'c',scl=T)#
+# #save(trC,file='~/Dropbox/CRAN/analyses/cost.trC.raw.Rdata')#
+# dcost = costDistance(trC,pop.loc2)#
+# cost.raw = as.matrix(dcost)#
+# cost.raw[,'Amotape'] = cost.raw[,'Amotape'] + dist.Amotape.Celica#
+# cost.raw['Amotape',] = cost.raw['Amotape',] + dist.Amotape.Celica#
+# cost.raw['Amotape','Amotape'] = 0#
+# write.table(cost.raw,file='~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/cost.raw.txt',row.names=T,col.names=T,quote=F,sep='\t')#
+#
+# ####ELEVATIONAL FILTER + QGIS EDITS#
+# r = raster('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/SDM/MAXENT_SDM_refined.asc')#
+# #convert all rasters less than 950m to NA, again #
+# files <- list.files(path="~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/bioclim.veg.layers", pattern='grd', full.names=TRUE)#
+# alt = raster(files[grep('alt_',files)])#
+# alt = crop(alt,extent(r))#
+# r[alt<1000]= NA#
+# r[alt>4700]= NA#
+# r[is.na(r)] = 0.001#
+#
+# rnew = r#
+# tr = transition(rnew,mean,directions=16)#
+# trC = geoCorrection(tr,'c',scl=T)#
+# #save(trC,file='~/Dropbox/CRAN/analyses/cost.trC.elefilt.EDIT.Rdata')#
+# dcost = costDistance(trC,pop.loc2)#
+# cost.refined = as.matrix(dcost)#
+# cost.refined[,'Amotape'] = cost.refined[,'Amotape'] + dist.Amotape.Celica#
+# cost.refined['Amotape',] = cost.refined['Amotape',] + dist.Amotape.Celica#
+# cost.refined['Amotape','Amotape'] = 0#
+# write.table(cost.refined,file='~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/cost.refined.txt',row.names=T,col.names=T,quote=F,sep='\t')#
+#
+cost.raw = read.delim('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/cost.raw.txt',stringsAsFactors=F)#
+cost.refined = read.delim('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/cost.refined.txt',stringsAsFactors=F)#
+#------------------------------------------------------------------------------------##
+#------------------------------------------------------------------------------------##
+#------------------------------------------------------------------------------------##
+#------------ Create distance matrices of population data for predictors ------------##
+#------------------------------------------------------------------------------------##
+#------------------------------------------------------------------------------------##
+#------------------------------------------------------------------------------------##
+#
+# Libraries#
+library(yhat) # Commonality analysis#
+#
+#functions for formatting predictor matrices and standardizing the values so coefficients comparable as beta-weights#
+standardize = function(x){tmp=(x-mean(x,na.rm=T))/sd(x,na.rm=T);diag(tmp)=0;return(tmp)}#
+#
+prep.standardize <- function(x){x=data.matrix(x)#
+					x=x[lower.tri(x, diag = FALSE)]#
+					x=(x-mean(x))/sqrt(var(x)) #
+					x}#
+#
+prep <- function(x){x=data.matrix(x)#
+					x=x[lower.tri(x, diag = FALSE)]#
+					x}#
+#
+#################################################################################################
+####	Raw Distance Matrices#
+#################################################################################################
+mFst = as.matrix(fst)#
+mFst[upper.tri(mFst)] = mFst[lower.tri(mFst)]#
+#
+mGeo = as.matrix(geo.raw)#
+mCost.raw = as.matrix(cost.raw)#
+mCost.refined = as.matrix(cost.refined)#
+mAlt = as.matrix(dist(pop.alt.raw))#
+mMass = as.matrix(dist(pop.mass.raw))#
+mEnv = as.matrix(dist(pop.env.raw))#
+mPlumage = as.matrix(dist(pop.plumage.raw))#
+mSize = as.matrix(dist(pop.size.raw))#
+#
+#################################################################################################
+####	Get indices for the populations from the SW slope for size, plumage, and other variables#
+####	Primarily used for plotting#
+cols.to.exclude = which(!(colnames(mFst) %in% c('Macate','Pacar','Quichas','Huamatanga')))#
+tmp.fst = mFst#
+tmp.fst[,-cols.to.exclude] = -999#
+tmp.fst[-cols.to.exclude,] = -999#
+tmp.fst[upper.tri(tmp.fst,diag=T)] = NA#
+indices.with.west.slope.pop =  which(tmp.fst[lower.tri(tmp.fst,diag=F)] == -999)#
+#
+####	indices for size#
+tmp.mFst = mFst[colnames(mSize),colnames(mSize)]#
+cols.to.exclude = which(!(colnames(tmp.mFst) %in% c('Macate','Pacar','Quichas','Huamatanga')))#
+tmp.fst = tmp.mFst#
+tmp.fst[,-cols.to.exclude] = -999#
+tmp.fst[-cols.to.exclude,] = -999#
+tmp.fst[upper.tri(tmp.fst,diag=T)] = NA#
+indices.with.west.slope.pop.SIZE =  which(tmp.fst[lower.tri(tmp.fst,diag=F)] == -999)#
+#
+####	indices for plumage#
+tmp.mFst = mFst[colnames(mPlumage),colnames(mPlumage)]#
+cols.to.exclude = which(!(colnames(tmp.mFst) %in% c('Macate','Pacar','Quichas','Huamatanga')))#
+tmp.fst = tmp.mFst#
+tmp.fst[,-cols.to.exclude] = -999#
+tmp.fst[-cols.to.exclude,] = -999#
+tmp.fst[upper.tri(tmp.fst,diag=T)] = NA#
+indices.with.west.slope.pop.PLUM =  which(tmp.fst[lower.tri(tmp.fst,diag=F)] == -999)#
+#################################################################################################
+####	Lists of distance matrices formatted for Multiple Matrix Regression on Distance Matrices (MMRR, Wang 2013)#
+#################################################################################################
+mFst = mFst #don't standardize#
+#for comparison of the three distance metrics#
+mDist.list = list(DIST.GEO = mGeo, DIST.RAW = mCost.raw, DIST.REFINED = mCost.refined)  #
+#
+#for univariate and regressions#
+mDist = mCost.refined#
+predictors = list(DIST=mDist,ELE=mAlt,ENV=mEnv,MASS=mMass,PLUM=mPlumage)#
+predictors = lapply(predictors,standardize)#
+#################################################################################################
+####	Distance matrices formatted for Commonality Analysis#
+#################################################################################################
+####	for commonality analysis#
+FST = prep.standardize(mFst)#
+DIST = prep.standardize(mDist) #
+ELE = prep.standardize(mAlt)#
+ENV = prep.standardize(mEnv)#
+MASS = prep.standardize(mMass)#
+SIZE = prep.standardize(mSize)#
+PLUM = prep.standardize(mPlumage)#
+#
+tmp2 = list(FST=FST, DIST=DIST, ELE=ELE, ENV=ENV, MASS=MASS, SIZE=SIZE, PLUM=PLUM)#
+#################################################################################################
+#Distance matrices formatted for Plotting#
+#################################################################################################
+####	plot data for three alternative to distance#
+dist.plotdata = data.frame(fst=prep(mFst),geo=prep(mDist.list[['DIST.GEO']]),cost.raw=prep(mDist.list[['DIST.RAW']]),cost.refined=prep(mDist.list[['DIST.REFINED']]))#
+#
+plotdata = data.frame(fst=prep(mFst),cost.refined=prep(mDist),alt=prep(mAlt),env=prep(mEnv),mass=prep(mMass))#
+#
+plotdata.SIZE = data.frame(fst = prep(mFst[colnames(mSize), colnames(mSize)]), size = prep(mSize))#
+#
+plotdata.PLUM = data.frame(fst = prep(mFst[colnames(mPlumage),colnames(mPlumage)]), plum = prep(mPlumage))#
+#-----------------------------------------------------##
+#-----------------------------------------------------##
+#-----------------------------------------------------##
+#------------ Make Figure S2 and Figure 5 ------------##
+#-----------------------------------------------------##
+#-----------------------------------------------------##
+#-----------------------------------------------------##
+#################################################################################################
+#################################################################################################
+# Figure S2 - Comparison of three distance metrics for supplementary material#
+#################################################################################################
+#################################################################################################
+#
+xlabs = c('Geographic Distance','Least-cost Distance (raw)','Dispersal Distance')#
+names(xlabs) = c('geo','cost.raw','cost.refined')#
+#
+pdf('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/outfiles/Figure S2.pdf',width=12,height=4,bg='transparent')#
+#
+#dev.new(width=12,height=4)#
+mat = matrix(c(1,2,3), nrow=1, ncol=3, byrow=TRUE)#
+nf = layout(mat=mat,heights=c(4),widths=c(4,4,4))#
+variables = c('geo','cost.raw','cost.refined')#
+i = 'cost.refined'#
+for(i in variables){#
+#
+cat(i,'\n')#
+#
+xvar = i#
+yvar = 'fst'#
+#
+tmpdata = dist.plotdata#
+#
+xlim = range(tmpdata[,xvar])#
+#xlim = c(0,1)#
+xlim[1] = xlim[1] - abs(xlim[1]*0.1)  #
+xlim[2] = xlim[2] + abs(xlim[2]*0.1)  #
+xlim[1] = 0#
+#
+ylim = c(0,0.6)#
+ylim[1] = ylim[1] - ylim[1]*0.1  #
+ylim[2] = ylim[2] + ylim[2]*0.1  #
+#
+par(mar=c(4,4,0,.5) + 0.1)#
+bg = rep(add.alpha('black',1),nrow(tmpdata))#
+bg[indices.with.west.slope.pop] = add.alpha('grey',.5)#
+pch = rep(19,nrow(tmpdata))#
+pch[indices.with.west.slope.pop] = 1#
+plot(tmpdata[,xvar],tmpdata[,yvar],type='n',xlab='',ylab = '',frame=F,xlim=xlim,ylim=ylim,axes=F)#
+points(tmpdata[,xvar],tmpdata[,yvar],pch=pch,col='black',bg=bg,cex=1.5,lty=2)#
+axis(1)#
+axis(2)#
+#
+mtext(xlabs[i], side=1, line=2.75, col='black', cex=1.25)#
+mtext(bquote(italic(F)[ST]), side=2, line=1.9, col='black', cex=1.25)#
+#
+	#add regression line for all#
+	mrm = MRM(tmpdata[,yvar] ~ tmpdata[,xvar],nperm=1000)#
+	if(mrm$coef[2,2] < 0.05){#
+		abline(a=mrm$coef[1,1],b=mrm$coef[2,1],col="grey50", lty=2,lwd=4)#
+	}#
+	uni.r2  = sprintf("%.2f", round(mrm$r.squared[1],2))#
+	mylabel = bquote(.('adj.') ~ italic(R)^2 == .(format(uni.r2, digits = 2)) ~ .('- all populations'))#
+	text(xlim[2],y=0.06,mylabel,cex=1.25,adj=1)#
+#
+	#add regression line for no West slope#
+	mrm = MRM(tmpdata[-indices.with.west.slope.pop,yvar] ~ tmpdata[-indices.with.west.slope.pop,xvar],nperm=1000)#
+	if(mrm$coef[2,2] < 0.05){#
+		abline(a=mrm$coef[1,1],b=mrm$coef[2,1],col="grey50", lty=1,lwd=4)#
+	}#
+	uni.r2  = sprintf("%.2f", round(mrm$r.squared[1],2))#
+	mylabel = bquote(.('adj.') ~ italic(R)^2 == .(format(uni.r2, digits = 2)) ~ .('- SW slope excluded'))#
+	text(xlim[2],y=0.02, mylabel,cex=1.25,adj=1)#
+}#
+dev.off()#
+#################################################################################################
+#################################################################################################
+# Figure 5 - Pairwise Plots#
+#################################################################################################
+#################################################################################################
+#
+xlabs = c('Dispersal Distance','Mass Disparity','Plumage Disparity','Elevation Disparity','Environmental Disparity')#
+names(xlabs) = c('cost.refined','mass','plum','alt','env')#
+#
+pdf('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/outfiles/Figure 5.pdf',width=8,height=8,bg='transparent')#
+#
+#dev.new(width=8,height=8)#
+mat = matrix(c(1,2,3,4), nrow=2, ncol=2, byrow=TRUE)#
+nf = layout(mat=mat,heights=c(4,4),widths=c(4,4))#
+variables = c('cost.refined','mass','alt','plum')#
+#
+colnames = c('xvar','min','max')#
+lims = data.frame(matrix(nrow= length(variables),ncol=length(colnames)))#
+colnames(lims)= colnames#
+lims[,'xvar'] = variables#
+lims[lims$xvar == 'cost.refined',c('min','max')] = c(0,2500)#
+lims[lims$xvar == 'mass',c('min','max')] = c(0,20)#
+lims[lims$xvar == 'alt',c('min','max')] = c(0,3500)#
+lims[lims$xvar == 'env',c('min','max')] = c(0,10)#
+lims[lims$xvar == 'plum',c('min','max')] = c(0,10)#
+#
+i = 'cost.refined'#
+for(i in variables){#
+#
+cat(i,'\n')#
+#
+xvar = i#
+yvar = 'fst'#
+if(xvar == 'plum'){#
+	tmpdata = plotdata.PLUM#
+}else{ #
+	tmpdata = plotdata#
+	}#
+xlim = c(lims[lims$xvar == i,c('min')],lims[lims$xvar == i,c('max')])#
+#
+# xlim = range(tmpdata[,xvar])#
+# #xlim = c(0,1)#
+# xlim[1] = xlim[1] - abs(xlim[1]*0.1)  #
+# xlim[2] = xlim[2] + abs(xlim[2]*0.1)  #
+#
+ylim = c(-0.05,0.6)#
+ylim[1] = ylim[1] - ylim[1]*0.1  #
+ylim[2] = ylim[2] + ylim[2]*0.1  #
+#
+par(mar=c(4,4,0,.5))#
+pch = rep(19,nrow(tmpdata))#
+pch[indices.with.west.slope.pop] = 1#
+plot(tmpdata[,xvar],tmpdata[,yvar],type='n',xlab='',ylab = '',frame=F,xlim=xlim,ylim=ylim,axes=F)#
+points(tmpdata[,xvar],tmpdata[,yvar],pch=pch,col='black',bg='black',cex=1.5,lty=2)#
+axis(1)#
+axis(2,at=seq(0,.6,.1))#
+#
+mtext(xlabs[i], side=1, line=2.75, col='black', cex=1.25)#
+#mtext(bquote(italic(F)[ST]~.('(WC84)')), side=2, line=1.9, col='black', cex=1.25)#
+mtext(bquote(italic(F)[ST]), side=2, line=1.9, col='black', cex=1.25)#
+	#add regression line for all#
+	mrm = MRM(tmpdata[,yvar] ~ tmpdata[,xvar],nperm=1000)#
+	if(mrm$coef[2,2] < 0.05){#
+		abline(a=mrm$coef[1,1],b=mrm$coef[2,1],col="grey50", lty=2,lwd=4)#
+	}#
+	uni.r2  = sprintf("%.2f", round(mrm$r.squared[1],2))#
+	mylabel = bquote(.('adj.') ~ italic(R)^2 == .(format(uni.r2, digits = 2)) ~ .('- all populations'))#
+	text(xlim[2],y=0,mylabel,cex=1.25,adj=1)#
+#
+	if(xvar == 'plum'){#
+		indices = indices.with.west.slope.pop.PLUM#
+	}else{#
+		indices = indices.with.west.slope.pop#
+	}#
+#
+	#add regression line for no West slope#
+	mrm = MRM(tmpdata[-indices,yvar] ~ tmpdata[-indices,xvar],nperm=1000)#
+	if(mrm$coef[2,2] < 0.05){#
+		abline(a=mrm$coef[1,1],b=mrm$coef[2,1],col="grey50", lty=1,lwd=4)#
+	}#
+	uni.r2  = sprintf("%.2f", round(mrm$r.squared[1],2))#
+	mylabel = bquote(.('adj.') ~ italic(R)^2 == .(format(uni.r2, digits = 2)) ~ .('- SW slope excluded'))#
+	text(xlim[2],y=-0.04, mylabel,cex=1.25,adj=1)#
+}#
+#
+dev.off()#
+#-------------------------------------------------------------------------------##
+#-------------------------------------------------------------------------------##
+#-------------------------------------------------------------------------------##
+#------------ Run Univariate, Multivariate and Commonality Analyses ------------##
+#-------------------------------------------------------------------------------##
+#-------------------------------------------------------------------------------##
+#-------------------------------------------------------------------------------##
+#
+#################################################################################################
+#################################################################################################
+#	Table 3 - UNIVARIATE TESTS with MMRR#
+#################################################################################################
+#################################################################################################
+#MMRR#
+source('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/scripts/supporting.functions/MMRR.R', chdir = F)#
+#
+colnames = c('predictor','r2','coefficient','tstatistic','pvalue')#
+uni.table = data.frame(matrix(ncol=length(colnames),nrow=length(predictors)))#
+colnames(uni.table) = colnames#
+i = 1#
+for(i in 1:length(predictors)){#
+	cat(i,'\n')#
+	tmp.mFst = mFst[colnames(predictors[[i]]),colnames(predictors[[i]])]#
+	fit = MMRR(tmp.mFst,predictors[i],nperm=1000)#
+	uni.table[i,'predictor'] = names(predictors)[i]#
+	uni.table[i,'r2'] = sprintf("%.3f", round(fit$r.squared,3))#
+	uni.table[i,'coefficient'] = sprintf("%.3f", round(fit$coefficients[2],3))#
+	uni.table[i,'tstatistic'] = sprintf("%.3f", round(fit$tstatistic[2],3))#
+	uni.table[i,'pvalue'] = sprintf("%.3f", round(fit$Fpvalue,3))#
+	}#
+#
+colnames(uni.table) = c('','r2','B','t','p')#
+uni.table[uni.table[,'p'] < 0.001,'p'] = '0.001'#
+#
+uni.table = uni.table[rev(order(uni.table$r2)),]#
+#
+table.path.uni = '~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/outfiles/Table.MMRR.univariate.all.populations.txt'#
+#
+#this corresponds to the upper table in Table 3#
+write.table(uni.table,file = table.path.uni,quote=F,col.names=T,row.names=F,sep='\t')#
+#############################
+#############################
+#	Table 4 - Multivariate Regression and Commonality analysis For Body Mass#
+#############################
+#############################
+FST = tmp2[['FST']]#
+DIST = tmp2[['DIST']] #
+ELE = tmp2[['ELE']]#
+ENV = tmp2[['ENV']]#
+MASS = tmp2[['MASS']]#
+#
+FST = tmp[['FST']]#
+DIST = tmp[['DIST']] #
+ELE = tmp[['ELE']]#
+ENV = tmp[['ENV']]#
+MASS = tmp[['MASS']]#
+# tmp#
+# tmp2#
+# for(i in names(tmp))cat(cor(tmp[[i]],tmp2[[i]]),'\n')#
+# names(tmp)#
+# plot(tmp[[2]],tmp2[[2]])#
+multi.table = c()#
+resBootstrap.list = list()#
+#
+#MMRR to get regression coefficients and significance values for multivariate model#
+#data for MMRR#
+x = predictors[!(names(predictors) %in% c('SIZE','PLUM'))] #can't include plumage, besides, explains almost none of the variance#
+fit = MMRR(Y = mFst, X = x, nperm=1000)#
+#
+#Do Commonality Analysis to get Unique, Common, and Total contribution of each predictor variable#
+data=data.frame(FST = FST, DIST = DIST, ELE = ELE, ENV = ENV, MASS = MASS)#
+ca = regr(lm(FST ~ DIST + MASS + ELE + ENV,data=data))#
+#
+#add in the common#
+colnames = c('model','predictor','coefficient','tstatistic','pvalue','Unique','Common','Total')#
+table = data.frame(matrix(ncol=length(colnames),nrow=length(x)))#
+colnames(table) = colnames#
+#
+model = paste0('Fst ~ ',paste(names(x),collapse=' + '))#
+table[,'model'] = c(model,paste0('r2 = ',round(fit$r.squared,3)),'','')#
+table[,'predictor'] = names(x)#
+table[,'coefficient'] = round(fit$coefficients[-1],3)#
+table[,'tstatistic'] = round(fit$tstatistic[-1],3)#
+table[,'pvalue'] = round(fit$tpvalue[-1],3)#
+table[,'Unique'] = round(ca$Commonality_Data$CCTotalbyVar[,'Unique'],3)#
+table[,'Common'] = round(ca$Commonality_Data$CCTotalbyVar[,'Common'],3)#
+table[,'Total']  = round(ca$Commonality_Data$CCTotalbyVar[,'Total'],3)#
+table = apply(table,2,as.character)#
+#
+multi.table = rbind(multi.table,table,rep('',ncol(table)))#
+#
+#this corresponds to the upper table for all populations in Table 4#
+table.path.multi = '~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/outfiles/Table.MMRR.multivariate.all.populations.txt'#
+write.table(multi.table,file = table.path.multi,quote=F,col.names=T,row.names=F,sep='\t')#
+#############################
+#############################
+#Commonality analysis For Body Mass with confidence intervals#
+#############################
+#############################
+#bootstrap procedure modified from code in supplementary of Prunier et al. (2015), which was based on methods in Peterman et al. (2014)#
+#
+#	Prunier JG, Colyn M, Legendre X, Nimon KF, Flamand MC (2015) Multicollinearity in spatial genetics: Separating the wheat from the chaff using commonality analyses. Molecular Ecology, 24, 263–283.#
+#	Peterman WE, Connette GM, Semlitsch RD, Eggert LS (2014) Ecological resistance surfaces predict fine-scale genetic differentiation in a terrestrial woodland salamander. Molecular Ecology, 23, 2402–2413.#
+#
+nperm=1000#
+n.predictors = 4#
+ncombos = ((2^n.predictors)-1)#
+boot=matrix(data = 0, nrow = nperm, ncol = ncombos)#
+resBootstrap=data.frame(n=rep(0,ncombos),o=rep(0,ncombos),l=rep(0,ncombos),u=rep(0,ncombos),p=rep(0,ncombos))#
+n=ncol(mFst)#
+sn=0.9*n#
+#
+for (i in 1:nperm){#
+	rarray= sort(sample(n,sn,replace=F))#
+	mmFst = mFst[rarray,rarray][lower.tri(mFst[rarray,rarray],diag=F)]#
+	mmDIST= prep(mDist[rarray,rarray])#
+	mmELE = prep(mAlt[rarray,rarray])#
+	mmENV = prep(mEnv[rarray,rarray])#
+	mmMASS =prep(mMass[rarray,rarray])#
+	comm=regr(lm(mmFst ~ mmDIST + mmMASS + mmELE + mmENV))#
+	boot[i,]=comm$Commonality_Data$CC[c(1:ncombos),1]#
+	print(i)#
+}#
+for (i in 1:ncombos){#
+	q=quantile(boot[,i], c(.025,.975))#
+	resBootstrap[i,1]=i#
+	resBootstrap[i,3]=q[1]#
+	resBootstrap[i,4]=q[2]#
+}#
+#
+resBootstrap[,2]=ca$Commonality_Data$CC[c(1:ncombos),1]#
+resBootstrap[,5]=ca$Commonality_Data$CC[c(1:ncombos),2]#
+rownames(resBootstrap) = rownames(ca$Commonality_Data$CC)[1:ncombos]#
+resBootstrap[,c('o','l','u')] = resBootstrap[,c('o','l','u')]#
+#
+new.rownames = gsub('\\s|[?!Unique$|Common$|to$|and$]','',rownames(resBootstrap))#
+rownames(resBootstrap) = new.rownames#
+#
+pdf('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/outfiles/Figure 6.pdf',width=8,height=7, bg='transparent')#
+#
+tmp = resBootstrap#
+#dev.new(width=8,height=7)#
+tmp = round(tmp,3)#
+tmp$n = rev(tmp$n)#
+#
+par(mar=c(4,2,4,20))#
+xlim = c(min(tmp[,3]), max(tmp[,4]))#
+plot(tmp[,2],tmp[,1],xlim=xlim,font=5,lab=c(ncombos, 7, 1),xaxt="n",yaxt="n",cex.lab=1,xlab='',ylab='',cex=1.5) #
+arrows(tmp[,3],tmp[,1],tmp[,4],tmp[,1],code=3,length=0.05,angle=90,lwd=1)#
+abline(v=0,lty=2)#
+axis(1,cex.axis=1)#
+mtext('Correlation Coefficient',1,line=2.5,cex=1.2)#
+#yaxis#
+x=cbind(1:15,rev(rownames(tmp)))#
+axis(4,at=x[,1],labels=x[,2],cex.axis=1,las=2)#
+mtext('Predictor Sets',2,cex=1.2,line=.5)#
+#upper xaxis#
+seq(0,round(max(tmp[,4]),2),by=round(max(tmp[,4]),2)/5)#
+at = seq(0,round(max(tmp[,4]),2),by=round(max(tmp[,4]),2)/5)#
+labels= round(at/sum(tmp[,'o']),2)#
+axis(3,at=at,labels=labels,cex.axis=1)#
+mtext('% Total',3,line=2.5,cex=1.2)#
+#coefficients#
+mtext('Coefficient',4,at = 16,las=2,line=12,adj=.5)#
+axis(4,line=12,at=tmp[,1],labels=tmp[,'o'],tick=F,cex.axis=1,las=2,hadj=1)#
+mtext('% Total',4,at = 16,las=2,line=17,adj=.5)#
+axis(4,line=17,at=tmp[,1],labels=tmp[,'p'],tick=F,cex.axis=1,las=2,hadj=1)#
+#
+mtext('Total',4,at = -.5,las=2,line=8,adj=.5)#
+mtext(sum(tmp[,'o']),4,at = -.5,las=2,line=12,adj=.5)#
+mtext(100,4,at = -.5,las=2,line=17,adj=.5)#
+#
+dev.off()

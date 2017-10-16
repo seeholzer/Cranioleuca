@@ -1,0 +1,168 @@
+source('~/Dropbox/CRAN/analyses/PstFst/genpop.df.from.genind.R', chdir = TRUE)
+source('~/Dropbox/CRAN/analyses/genind2stampp.R', chdir = TRUE)
+#=============================================================================================================##
+# Script created by Glenn Seeholzer, contact at seeholzer.glenn@gmail.com#
+# Script created in version R 3.2.3 #
+# This script: runs univariate and multivariate matrix regressions testing for isolation-by-adaptation, #
+#			isolation-by-environment, and isolation-by-distance in Cranioleuca antisiensis. #
+#			Runs a commonality analysis assesing the relative important of these processes in shaping #
+#			genetic structure of C. antisiensis#
+# Usage notes: run line by line#
+#=============================================================================================================##
+library(plyr)#
+library(adegenet)#
+library(StAMPP)#
+library(gdistance)#
+#
+####	import phenotypic and meta-data#
+data = read.delim('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/Data.Table.txt',stringsAsFactors=F)#
+#
+####	import genetic data#
+gen = get(load('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/SNPdata/SNPdata.genind.Rdata'))#
+#
+####	specify the populations#
+tmp = data[data$ID %in% indNames(gen), ]#
+tmp = tmp[match(indNames(gen),tmp$ID), ]#
+strata(gen) = data.frame(pop = tmp[,'Population'])#
+setPop(gen) = ~pop
+fst = read.delim('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/Fst.all.05outliersexcluded.txt')
+fst
+#=============================================================================================================##
+# Script created by Glenn Seeholzer, contact at seeholzer.glenn@gmail.com#
+# Script created in version R 3.2.3 #
+# This script: runs univariate and multivariate matrix regressions testing for isolation-by-adaptation, #
+#			isolation-by-environment, and isolation-by-distance in Cranioleuca antisiensis. #
+#			Runs a commonality analysis assesing the relative important of these processes in shaping #
+#			genetic structure of C. antisiensis#
+# Usage notes: run line by line#
+#=============================================================================================================##
+library(plyr)#
+library(adegenet)#
+library(StAMPP)#
+library(gdistance)#
+#
+####	import phenotypic and meta-data#
+data = read.delim('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/Data.Table.txt',stringsAsFactors=F)#
+#
+####	import genetic data#
+gen = get(load('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/SNPdata/SNPdata.genind.Rdata'))#
+#
+####	specify the populations#
+tmp = data[data$ID %in% indNames(gen), ]#
+tmp = tmp[match(indNames(gen),tmp$ID), ]#
+strata(gen) = data.frame(pop = tmp[,'Population'])#
+setPop(gen) = ~pop#
+####	Calculate pairwise population global Fst matrix#
+####	because of minor variations in each run of stamppFst, it is advisable to upload the pairwise Fst matrix used in the original publication to ensure exact duplication of results presented in paper. #
+fst = read.delim('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/Fst.all.05outliersexcluded.txt')#
+#
+####	howe
+data = data[!(data$Population %in% c('erythrops','curtata')), ]#
+gen = gen[i = which(!grepl('cra.cur',indNames(gen)))]#
+fst = fst[rownames(fst) != 'curtata',colnames(fst) != 'curtata']
+data = data[data$Population %in% rownames(fst.all) & data$ID %in% indNames(gen), ]
+data = data[data$Population %in% rownames(fst) & data$ID %in% indNames(gen), ]
+####	ENV #
+####	import bioclim and enviro rasters#
+files <- list.files(path="~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/bioclim.veg.layers", pattern='grd', full.names=TRUE)#
+BIOCLIM = stack(files[grep('bio\\d',files)]) #create raster stack of BIOCLIM rasters#
+envdata = data.frame(pop=data[,'Population'],as.data.frame(extract(BIOCLIM, data[,c('Longitude','Latitude')]))) #extract BIOCLIM data for each individual#
+tmp = aggregate(. ~ pop, data= envdata,mean,na.rm=T) #take mean for each locality#
+my.prc = prcomp(tmp[,-1], center=T, scale = T, na.omit=T) #do PCA#
+pc.values = predict(my.prc)[,1:ncol(tmp[,-1])]#
+pop.env.raw = data.frame(pc.values)#
+rownames(pop.env.raw) = tmp[,1]#
+#
+####	ALT #
+tmp = aggregate(. ~ Population, data= data[,c('Population','Bioclim.Elevation')],mean,na.rm=T)#
+pop.alt = as.matrix(tmp[,'Bioclim.Elevation'])#
+rownames(pop.alt) = tmp[,'Population']#
+pop.alt.raw = pop.alt[rownames(fst),] #put in same order as fst matrix#
+#
+####	MASS #
+####	remove juveniles and individuals without mass data#
+tmp = aggregate(. ~ Population, data= data[!is.na(data$Mass) & !(data$Age %in% c('j')),c('Population','Mass')],mean,na.rm=T) #
+pop.mass = as.matrix(tmp[,'Mass'])#
+rownames(pop.mass) = tmp[,'Population']#
+pop.mass.raw = pop.mass[rownames(fst),] #put in same order as dgen.fst.all#
+#
+####	SIZE (PC1.morphology)#
+####	remove juveniles and individuals without size data#
+tmp = aggregate(. ~ Population, data= data[!is.na(data$PC1.morphology) & !(data$Age %in% c('j')) , c('Population','PC1.morphology')],mean,na.rm=T)#
+pop.size = as.matrix(tmp[,'PC1.morphology'])#
+rownames(pop.size) = tmp[,'Population']#
+order = rownames(fst)[rownames(fst) %in% rownames(pop.size)] #missing populations without morphological measurment #
+pop.size.raw = pop.size[order,] #put in same order as fst#
+#
+####	PLUM (PC1.plumage)#
+tmp = aggregate(. ~ Population, data= data[,c('Population','PC1.plumage')],mean,na.rm=T)#
+pop.plumage = as.matrix(tmp[,'PC1.plumage'])#
+rownames(pop.plumage) = tmp[,'Population']#
+order = rownames(fst)[rownames(fst) %in% rownames(pop.plumage)]#
+pop.plumage.raw = pop.plumage[order,] #put in same order as dgen.fst.all
+cost.raw = read.delim('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/cost.raw.txt',stringsAsFactors=F)#
+cost.refined = read.delim('~/Dropbox/CRAN/Chapter.2/Seeholzer&Brumfield_ms/DataArchival/cost.refined.txt',stringsAsFactors=F)
+# Libraries#
+library(yhat) # Commonality analysis#
+#
+#functions for formatting predictor matrices and standardizing the values so coefficients comparable as beta-weights#
+standardize = function(x){tmp=(x-mean(x,na.rm=T))/sd(x,na.rm=T);diag(tmp)=0;return(tmp)}#
+#
+prep.standardize <- function(x){x=data.matrix(x)#
+					x=x[lower.tri(x, diag = FALSE)]#
+					x=(x-mean(x))/sqrt(var(x)) #
+					x}#
+#
+prep <- function(x){x=data.matrix(x)#
+					x=x[lower.tri(x, diag = FALSE)]#
+					x}#
+#
+#################################################################################################
+####	Raw Distance Matrices#
+#################################################################################################
+mFst = as.matrix(fst)#
+mFst[upper.tri(mFst)] = mFst[lower.tri(mFst)]#
+#
+mGeo = as.matrix(geo.raw)#
+mCost.raw = as.matrix(cost.raw)#
+mCost.refined = as.matrix(cost.refined)#
+mAlt = as.matrix(dist(pop.alt.raw))#
+mMass = as.matrix(dist(pop.mass.raw))#
+mEnv = as.matrix(dist(pop.env.raw))#
+mPlumage = as.matrix(dist(pop.plumage.raw))#
+mSize = as.matrix(dist(pop.size.raw))#
+#
+#################################################################################################
+####	Get indices for the populations from the SW slope for size, plumage, and other variables#
+####	Primarily used for plotting#
+cols.to.exclude = which(!(colnames(mFst) %in% c('Macate','Pacar','Quichas','Huamatanga')))#
+tmp.fst = mFst#
+tmp.fst[,-cols.to.exclude] = -999#
+tmp.fst[-cols.to.exclude,] = -999#
+tmp.fst[upper.tri(tmp.fst,diag=T)] = NA#
+indices.with.west.slope.pop =  which(tmp.fst[lower.tri(tmp.fst,diag=F)] == -999)#
+#
+####	indices for size#
+tmp.mFst = mFst[colnames(mSize),colnames(mSize)]#
+cols.to.exclude = which(!(colnames(tmp.mFst) %in% c('Macate','Pacar','Quichas','Huamatanga')))#
+tmp.fst = tmp.mFst#
+tmp.fst[,-cols.to.exclude] = -999#
+tmp.fst[-cols.to.exclude,] = -999#
+tmp.fst[upper.tri(tmp.fst,diag=T)] = NA#
+indices.with.west.slope.pop.SIZE =  which(tmp.fst[lower.tri(tmp.fst,diag=F)] == -999)#
+#
+####	indices for plumage#
+tmp.mFst = mFst[colnames(mPlumage),colnames(mPlumage)]#
+cols.to.exclude = which(!(colnames(tmp.mFst) %in% c('Macate','Pacar','Quichas','Huamatanga')))#
+tmp.fst = tmp.mFst#
+tmp.fst[,-cols.to.exclude] = -999#
+tmp.fst[-cols.to.exclude,] = -999#
+tmp.fst[upper.tri(tmp.fst,diag=T)] = NA#
+indices.with.west.slope.pop.PLUM =  which(tmp.fst[lower.tri(tmp.fst,diag=F)] == -999)
+tmp = aggregate(. ~ Population, data= data[,c('Population','Longitude','Latitude')],mean,na.rm=T)
+tmp
+pop.loc = as.matrix(tmp[,c('Longitude','Latitude')])
+rownames(pop.loc) = tmp[,'Population']
+pop.loc
+geo.raw = spDists(pop.loc,longlat=TRUE) ; colnames(geo.raw) = rownames(geo.raw) = rownames(pop.loc)
+geo.raw
