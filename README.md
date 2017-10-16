@@ -44,7 +44,7 @@ hierarchical and alphabetical order.
 					primary file used in the R scripts for Pst-Fst and commonality 
 					analysis.
 
-#GBS_data
+---GBS_data
 	This directory contains the original data files sent by the Cornell Institute 
 	for Genomic Diversity to the authors. This data is the output of the UNEAK pipeline,
 	not the raw GBS reads. The authors conducted additional processing as explained
