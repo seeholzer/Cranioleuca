@@ -6,8 +6,15 @@ hierarchical and alphabetical order.
 
 
 
-
-### SDM - Directory containing MAXENT models and presence localities.
+### GBS_data
+	This directory contains the original data files sent by the Cornell Institute 
+	for Genomic Diversity to the authors. This data is the output of the UNEAK pipeline,
+	not the raw GBS reads. The authors conducted additional processing as explained
+	in the methods of Seeholzer & Brumfield 2017.
+	
+### SDM
+	Directory containing MAXENT models and presence localities.
+	
 	MAXENT_SDM_Cranioleuca_antisiensis.asc
 			Raw logistic output from the MAXENT model. See Supporting Methods for more 
 			information on how this model was created.
@@ -43,12 +50,6 @@ hierarchical and alphabetical order.
 				R data object in genind format (package adgenenet). This is the 
 				primary file used in the R scripts for Pst-Fst and commonality 
 				analysis.
-
-### GBS_data
-	This directory contains the original data files sent by the Cornell Institute 
-	for Genomic Diversity to the authors. This data is the output of the UNEAK pipeline,
-	not the raw GBS reads. The authors conducted additional processing as explained
-	in the methods of Seeholzer & Brumfield 2017.
 
 
 ### bioclim.veg.layers
