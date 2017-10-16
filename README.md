@@ -8,41 +8,41 @@ hierarchical and alphabetical order.
 
 
 ### SDM - Directory containing MAXENT models and presence localities.
-		MAXENT_SDM_Cranioleuca_antisiensis.asc
-				Raw logistic output from the MAXENT model. See Supporting Methods for more 
-				information on how this model was created.
-		
-		TNC_CentralAndeanWetPuna.shp
-				Shapefile of the Central Andean Wet Puna ecoregion used to mask 
-				MAXENT_SDM_Cranioleuca_antisiensis.asc
+	MAXENT_SDM_Cranioleuca_antisiensis.asc
+			Raw logistic output from the MAXENT model. See Supporting Methods for more 
+			information on how this model was created.
 
-		presence.localities.txt
-				Tab-delimited text file with coordinates in decimal degrees for presence 
-				localities used in MAXENT model. See Supplementary methods for more 
-				information on the data sources and filtering schemes used to obtain this 
-				final list. 
+	TNC_CentralAndeanWetPuna.shp
+			Shapefile of the Central Andean Wet Puna ecoregion used to mask 
+			MAXENT_SDM_Cranioleuca_antisiensis.asc
+
+	presence.localities.txt
+			Tab-delimited text file with coordinates in decimal degrees for presence 
+			localities used in MAXENT model. See Supplementary methods for more 
+			information on the data sources and filtering schemes used to obtain this 
+			final list. 
 
 ### SNPdata
-		Directory containing SNP data in various formats
-			
-			SNPdata.txt
-					Contains unphased SNPs for 5154 loci across 175 individuals include 
-					three Cranioleuca curtata as outgroups (cra.cur.B43876, cra.cur.B6032, 
-					cra.cur.B8175). Columns correspond to locus ID (1 through 5154), the 
-					key for the identification of the nucleotides of the SNPs, and the IDs 
-					of the 175 individuals included in the dataset. The IDs correspond to 
-					the IDs in Data.Table.txt.
+	Directory containing SNP data in various formats
+		
+		SNPdata.txt
+				Contains unphased SNPs for 5154 loci across 175 individuals include 
+				three Cranioleuca curtata as outgroups (cra.cur.B43876, cra.cur.B6032, 
+				cra.cur.B8175). Columns correspond to locus ID (1 through 5154), the 
+				key for the identification of the nucleotides of the SNPs, and the IDs 
+				of the 175 individuals included in the dataset. The IDs correspond to 
+				the IDs in Data.Table.txt.
 
-			STRUCTURE.input.file.txt
-					This the SNPdata.txt file converted into the input format for 
-					STRUCTURE. Although we did not use STRUCTURE in our analyses, it is a 
-					common input file format that can be converted easily to the input 
-					formats for the R package Adegenet and for ADMIXTURE.	
+		STRUCTURE.input.file.txt
+				This the SNPdata.txt file converted into the input format for 
+				STRUCTURE. Although we did not use STRUCTURE in our analyses, it is a 
+				common input file format that can be converted easily to the input 
+				formats for the R package Adegenet and for ADMIXTURE.	
 
-			SNPdata.genind.Rdata
-					R data object in genind format (package adgenenet). This is the 
-					primary file used in the R scripts for Pst-Fst and commonality 
-					analysis.
+		SNPdata.genind.Rdata
+				R data object in genind format (package adgenenet). This is the 
+				primary file used in the R scripts for Pst-Fst and commonality 
+				analysis.
 
 ### GBS_data
 	This directory contains the original data files sent by the Cornell Institute 
@@ -52,9 +52,9 @@ hierarchical and alphabetical order.
 
 
 ### bioclim.veg.layers
-		Directory containing grid files containing rasters of altitude, 19 bioclim 
-		variables, and two vegetation indices (TREE and NDVI) used in various analyses. 
-		These rasters are cropped to the study area for Cranioleuca antisiensis.
+	Directory containing grid files containing rasters of altitude, 19 bioclim 
+	variables, and two vegetation indices (TREE and NDVI) used in various analyses. 
+	These rasters are cropped to the study area for Cranioleuca antisiensis.
 
 ### outfiles
 	Directory to where outfiles from the scripts will be written.
